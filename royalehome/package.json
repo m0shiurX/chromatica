@@ -1,0 +1,17 @@
+{
+  "name": "royaleome",
+  "version": "1.0.0",
+  "description": "Starter pack for frontend website and web application",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Moshiur Rahman",
+  "license": "MIT",
+  "homepage": "https://chromatic.network/royalehome",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
