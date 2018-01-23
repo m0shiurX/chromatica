@@ -4,7 +4,7 @@
   padding: 0; }
 
 body {
-  background-color: #bfe8ff;
+  background-color: #ffffff;
   font-family: 'Source Sans Pro',sans-serif; }
 
 header {
@@ -83,8 +83,8 @@ section {
     align-items: center;
     width: 100%; }
     .brand .brands img {
-      width: 250px;
-      height: 100px; }
+      width: auto;
+      height: 80px; }
 
 footer {
   height: 80vh;

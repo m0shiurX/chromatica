@@ -1,4 +1,5 @@
-$primary: #bfe8ff;
+// $primary: #bfe8ff;
+$primary: #ffffff;
 $secondary: #1c1c1c;
 *{
     box-sizing: border-box;
@@ -101,8 +102,8 @@ section{
         align-items: center;
         width: 100%;
         img {
-            width: 250px;
-            height: 100px;
+            width: auto;
+            height: 80px;
         }
     }
 }
