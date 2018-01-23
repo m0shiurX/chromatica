@@ -50,21 +50,87 @@ header {
 main {
   width: 100%; }
 
-section {
+.showcase {
   height: 100vh;
   width: 70%;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  align-content: space-around;
   align-items: center; }
-  section .info {
-    width: 30%; }
-  section .product {
+  .showcase .info {
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column; }
+    .showcase .info .logo {
+      padding: 1em 0em; }
+    .showcase .info ul.features {
+      list-style: square;
+      padding: 1em; }
+      .showcase .info ul.features li {
+        line-height: 1.6em;
+        font-family: "HankenLight", sans-serif;
+        font-size: 1.2em;
+        font-weight: 500; }
+    .showcase .info .buttons {
+      padding: 1em;
+      margin: 50px auto;
+      align-self: flex-end; }
+      .showcase .info .buttons a.btn {
+        padding: .8em 1.3em;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-family: "HankenBook";
+        border-radius: 25px;
+        background: transparent;
+        color: #1c1c1c;
+        border: 3px solid #1c1c1c;
+        transition: all .2s ease-in-out; }
+        .showcase .info .buttons a.btn:hover {
+          background: #1c1c1c;
+          color: #FFF;
+          border: 3px solid #FFF;
+          box-shadow: 0px 0px 10px 0px #252525; }
+  .showcase .apartments {
     width: 70%;
-    margin: 0 auto; }
-    section .product img {
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    overflow: hidden; }
+    .showcase .apartments .rooms {
+      align-self: center;
       width: 100%;
-      height: auto; }
+      height: 60vh;
+      background: tan;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around; }
+      .showcase .apartments .rooms .single {
+        display: flex;
+        width: 580px;
+        background: #3d3d3d;
+        margin: 1em; }
+        .showcase .apartments .rooms .single h1 {
+          margin: auto; }
+    .showcase .apartments .pagination {
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-around;
+      width: 30%; }
+      .showcase .apartments .pagination i {
+        background: #ccc;
+        color: #ccc;
+        border-radius: 50%;
+        width: 18px;
+        cursor: pointer; }
+        .showcase .apartments .pagination i:nth-child(2) {
+          color: #1c1c1c;
+          background: #1c1c1c; }
 
 .testimony {
   width: 70%;
@@ -140,7 +206,8 @@ section {
 .subscription {
   width: 100%;
   background: #222222;
-  height: 18vh; }
+  height: 18vh;
+  margin-bottom: 80px; }
   .subscription .container {
     width: 70%;
     height: 100%;
@@ -164,7 +231,7 @@ section {
         .subscription .container .fgroup input:last-child {
           border-radius: 0 5px 5px 0;
           background: #0e293f;
-          color: #7a7a7a;
+          color: #ffffff;
           font-size: 1em;
           cursor: pointer;
           padding: .8em 2em; }
