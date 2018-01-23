@@ -86,6 +86,33 @@ section {
       width: auto;
       height: 80px; }
 
+.facilities {
+  width: 70%;
+  margin: 0 auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: .5px solid #1c1c1c; }
+  .facilities .title {
+    font-weight: normal;
+    font-size: 1.4em;
+    color: #3d3d3d;
+    text-align: center;
+    margin: 10px auto 50px auto; }
+  .facilities .facility {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    flex-wrap: wrap; }
+    .facilities .facility .icon {
+      width: 20%;
+      text-align: center; }
+      .facilities .facility .icon img {
+        width: auto;
+        height: 80px; }
+
 footer {
   height: 80vh;
   background-color: #1c1c1c;
