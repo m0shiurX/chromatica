@@ -66,21 +66,25 @@ section {
 .brand {
   width: 70%;
   margin: 0 auto;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top: .5px solid #1c1c1c; }
   .brand .title {
+    font-weight: normal;
+    font-size: 1.4em;
+    color: #3d3d3d;
     text-align: center;
     margin: 10px auto 50px auto; }
   .brand .brands {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%; }
     .brand .brands img {
-      width: 180px;
-      height: 150px; }
+      width: 250px;
+      height: 100px; }
 
 footer {
   height: 80vh;
