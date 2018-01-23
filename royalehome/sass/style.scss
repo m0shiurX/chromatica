@@ -82,7 +82,7 @@ section{
 footer{
     height: 80vh;
     background-color: #1c1c1c;
-    color: #FFF;
+    color: #ccc;
     .container{
         width: 70%;
         margin: auto;
@@ -112,26 +112,28 @@ footer{
             border-bottom: 1px solid #bfe8ff;
             align-items: flex-start;
             padding-top: 80px;
-            .logo{
-
-            }
+            font-weight: normal;
             .menu, .contact{
                 ul{
                     list-style: none;
                     font-size: 18px;
                     line-height: 2em;
+                    li i{
+                        padding-right: 15px;
+                    }
                 }
             }
             .subscribe{
-                width: 400px;
+                width: 500px;
                 .header{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    span{
-                        font-family: 'Hankenbook', sans-serif;
-                        font-size: 2em;
-                        line-height: 2em;
+                    margin-bottom: 2em;
+                    h3{
+                        // font-family: 'Hankenlight', sans-serif;
+                        font-size: 18px;
+                        line-height: 22px;
                     }
                     ul li{
                         display: inline;
@@ -141,6 +143,22 @@ footer{
                 }
                 form{
                     display: flex;
+                    justify-content: space-around;
+                    input{
+                        font-size: 16px;
+                        font-weight: normal;
+                        padding: 12px 20px;
+                        border: .5px solid #ccc;
+                        background: transparent;
+                        color: #ccc;
+                        &[type="text"]{
+                            width: 70%;
+                            font-style: oblique;
+                        }
+                        &[type="button"]{
+                            width: 30%;
+                        }
+                    }
                     
                 }
 
