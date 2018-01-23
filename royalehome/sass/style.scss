@@ -19,12 +19,15 @@ header{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0  2%;
+        padding: 0  5%;
         height: 5vh;
-        .logo img{
-            width: 120px;
-            height: auto;
-        }
+        .logo{
+            padding: 1em;
+            img{
+                width: 100px;
+                height: auto;
+            }
+        } 
         ul li{
             display: inline;
             color: $secondary;

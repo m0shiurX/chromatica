@@ -16,11 +16,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0  2%;
+    padding: 0  5%;
     height: 5vh; }
-    header nav .logo img {
-      width: 120px;
-      height: auto; }
+    header nav .logo {
+      padding: 1em; }
+      header nav .logo img {
+        width: 100px;
+        height: auto; }
     header nav ul li {
       display: inline;
       color: #1c1c1c;
