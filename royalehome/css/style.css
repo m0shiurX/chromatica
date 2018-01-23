@@ -76,13 +76,16 @@ footer {
       align-items: center;
       justify-content: space-around;
       border-bottom: 1px solid #bfe8ff; }
-      footer .container .services ul > li {
-        display: inline;
-        margin-right: 80px; }
-        footer .container .services ul > li:last-child {
-          margin-right: 0; }
-        footer .container .services ul > li i {
-          font-size: 48px; }
+      footer .container .services ul {
+        list-style: none;
+        display: flex;
+        text-align: center; }
+        footer .container .services ul li {
+          margin-right: 50px; }
+          footer .container .services ul li:last-child {
+            margin-right: 0; }
+          footer .container .services ul li i {
+            font-size: 48px; }
     footer .container .footer {
       height: 50vh;
       display: flex;

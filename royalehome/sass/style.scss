@@ -92,14 +92,19 @@ footer{
             align-items: center;
             justify-content: space-around;
             border-bottom: 1px solid #bfe8ff;
-            ul>li{
-                display: inline;
-                margin-right: 80px;
-                &:last-child{
-                    margin-right: 0;
-                }
-                i{
-                    font-size: 48px;
+            ul{
+                list-style: none;
+                display: flex;
+                text-align: center;
+                li{
+                    // display: inline;
+                    margin-right: 50px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    i{
+                        font-size: 48px;
+                    }
                 }
             }
             
