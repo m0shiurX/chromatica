@@ -155,9 +155,11 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    flex-wrap: wrap; }
     .brand .brands img {
       width: auto;
+      max-width: 30%;
       height: 80px; }
 
 .facilities {
@@ -206,7 +208,8 @@ footer {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      border-bottom: 1px solid #bfe8ff; }
+      border-bottom: 1px solid #bfe8ff;
+      flex-wrap: wrap; }
       footer .container .services ul {
         list-style: none;
         display: flex;
@@ -225,7 +228,8 @@ footer {
       border-bottom: 1px solid #bfe8ff;
       align-items: flex-start;
       padding-top: 80px;
-      font-weight: normal; }
+      font-weight: normal;
+      flex-wrap: wrap; }
       footer .container .footer .menu ul, footer .container .footer .contact ul {
         list-style: none;
         font-size: 1em;

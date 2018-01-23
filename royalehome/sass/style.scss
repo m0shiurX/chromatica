@@ -158,7 +158,7 @@ section{
             &:nth-child(2){
                 color: #1c1c1c;
                 background: #1c1c1c;
-            }
+            }   
         }
     }
 }
@@ -183,8 +183,10 @@ section{
         justify-content: space-around;
         align-items: center;
         width: 100%;
+        flex-wrap: wrap;
         img {
             width: auto;
+            max-width: 30%;
             height: 80px;
         }
     }
@@ -243,6 +245,7 @@ footer{
             align-items: center;
             justify-content: space-around;
             border-bottom: 1px solid #bfe8ff;
+            flex-wrap: wrap;
             ul{
                 list-style: none;
                 display: flex;
@@ -269,6 +272,7 @@ footer{
             align-items: flex-start;
             padding-top: 80px;
             font-weight: normal;
+            flex-wrap: wrap;
             .menu, .contact{
                 ul{
                     list-style: none;
