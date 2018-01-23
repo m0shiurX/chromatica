@@ -162,6 +162,47 @@ section{
         }
     }
 }
+.subscription{
+    width: 100%;
+    background: #222222;
+    height: 18vh;
+    .container{
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            h3{
+                font-size: 1.5em;
+            }
+            color: #7a7a7a;
+        }
+        .fgroup{
+            padding: .2em;
+            background: #727272;
+            border-radius: 5px;
+            input{
+                padding: 1em 2em;
+                border: 0;
+
+                &:first-child{
+                    border-radius: 5px 0 0 5px; 
+                }
+                &:last-child{
+                    border-radius: 0 5px 5px 0;
+                    background: #0e293f;
+                    color: #7a7a7a;
+                    font-size: 1em;
+                    cursor: pointer;
+                    padding: .8em 2em;
+                }
+            }
+        }
+
+    }
+}
 .brand{
     width: 70%;
     margin: 0 auto;

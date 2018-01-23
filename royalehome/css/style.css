@@ -137,6 +137,38 @@ section {
         color: #1c1c1c;
         background: #1c1c1c; }
 
+.subscription {
+  width: 100%;
+  background: #222222;
+  height: 18vh; }
+  .subscription .container {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .subscription .container div {
+      color: #7a7a7a; }
+      .subscription .container div h3 {
+        font-size: 1.5em; }
+    .subscription .container .fgroup {
+      padding: .2em;
+      background: #727272;
+      border-radius: 5px; }
+      .subscription .container .fgroup input {
+        padding: 1em 2em;
+        border: 0; }
+        .subscription .container .fgroup input:first-child {
+          border-radius: 5px 0 0 5px; }
+        .subscription .container .fgroup input:last-child {
+          border-radius: 0 5px 5px 0;
+          background: #0e293f;
+          color: #7a7a7a;
+          font-size: 1em;
+          cursor: pointer;
+          padding: .8em 2em; }
+
 .brand {
   width: 70%;
   margin: 0 auto;
