@@ -79,6 +79,29 @@ section{
         }
     }
 }
+.brand{
+    width: 70%;
+    margin: 0 auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: .5px solid #1c1c1c;
+    .title {
+        text-align: center;
+        margin: 10px auto 50px auto;
+    }
+
+    .brands {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        img {
+            width: 180px;
+            height: 150px;
+        }
+    }
+}
 footer{
     height: 80vh;
     background-color: #1c1c1c;
@@ -121,7 +144,7 @@ footer{
             .menu, .contact{
                 ul{
                     list-style: none;
-                    font-size: 18px;
+                    font-size: 1em;
                     line-height: 2em;
                     li i{
                         padding-right: 15px;
@@ -137,8 +160,8 @@ footer{
                     margin-bottom: 2em;
                     h3{
                         // font-family: 'Hankenlight', sans-serif;
-                        font-size: 18px;
-                        line-height: 22px;
+                        font-size: 1em;
+                        line-height: 1.5em;
                     }
                     ul li{
                         display: inline;
