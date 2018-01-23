@@ -131,7 +131,7 @@ main{
                 background: transparent;
                 color: #1c1c1c;
                 border: 3px solid #1c1c1c;
-                transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;                
                 &:hover{
                     background: #1c1c1c;
                     color: #FFF;
@@ -188,6 +188,9 @@ main{
                             color: #444444;
                             border: 3px solid #444444;
                             transition: all .2s ease-in-out;
+                            &:first-child {
+                                margin-right: 10px;
+                            }
                             &:hover {
                                 background: #444444;
                                 color: #FFF;

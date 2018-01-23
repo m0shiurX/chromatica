@@ -161,6 +161,8 @@ main {
               color: #444444;
               border: 3px solid #444444;
               transition: all .2s ease-in-out; }
+              .showcase .apartments .rooms .single .content .buttons a.btn:first-child {
+                margin-right: 10px; }
               .showcase .apartments .rooms .single .content .buttons a.btn:hover {
                 background: #444444;
                 color: #FFF;
