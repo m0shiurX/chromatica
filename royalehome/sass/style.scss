@@ -59,7 +59,7 @@ header{
     }
 }
 main{
-
+    width: 100%;
 }
 section{
     height: 100vh;
@@ -80,6 +80,88 @@ section{
         }
     }
 }
+.testimony{
+    width: 70%;
+    margin: 0 auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: .5px solid #7a7a7a;
+    .title {
+        font-weight: normal;
+        font-size: 1.4em;
+        color: #3d3d3d;
+        text-align: center;
+        margin: 10px auto 50px auto;
+    }
+
+    .quotes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        div {
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            color: teal;
+            blockquote{
+                font-size: 1.2em;
+                font-family: 'Halkenbook', sans-serif;
+                font-style: oblique;
+                text-align: justify;
+                text-align-last: left;
+                padding: 1em;
+                position: relative;
+                line-height: 1.5em;
+                &:before{
+                    content: "\201C";
+                    font-size: 3em;
+                    font-weight: bold;
+                    color: rgb(8, 61, 52);
+                    position: absolute;
+                    left: -15px;
+                    top:5px;
+                }
+            }
+            span{
+                padding: 1em;
+                font-weight: 200;
+                font-style: oblique;
+                margin-left: 20px;
+                text-align: left;
+                position: relative;
+                &:before{
+                    content: "\035E";
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: rgb(8, 61, 52);
+                    position: absolute;
+                    left: 0px;
+                    top:15px;
+                }
+            }
+        }
+    }
+    .pagination{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        i{
+            background: #ccc;
+            color: #ccc;
+            border-radius: 50%;
+            width: 18px;
+            cursor: pointer;
+            &:nth-child(2){
+                color: #1c1c1c;
+                background: #1c1c1c;
+            }
+        }
+    }
+}
 .brand{
     width: 70%;
     margin: 0 auto;
@@ -87,7 +169,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: .5px solid #1c1c1c;
+    border-top: .5px solid #727272;
     .title {
         font-weight: normal;
         font-size: 1.4em;
@@ -115,7 +197,7 @@ section{
     flex-direction: column;
     align-content: space-around;
     align-items: center;
-    border-top: .5px solid #1c1c1c;
+    border-top: .5px solid #757575;
     .title {
         font-weight: normal;
         font-size: 1.4em;
