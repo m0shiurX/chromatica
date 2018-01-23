@@ -110,9 +110,10 @@ section{
 .facilities{
     width: 70%;
     margin: 0 auto;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
+    align-content: space-around;
     align-items: center;
     border-top: .5px solid #1c1c1c;
     .title {
@@ -126,15 +127,22 @@ section{
     .facility {
         display: flex;
         justify-content: space-around;
+        align-content: space-between;
         align-items: flex-end;
         width: 100%;
         flex-wrap: wrap;
         .icon{
             width: 20%;
             text-align: center;
+            margin-bottom: 40px;
+            p{
+                padding-top: 10px;
+                color: tomato;
+                font-size: 1.2em;
+            }
             img {
                 width: auto;
-                height: 80px;
+                height: 100px;
             }
         }
     }
