@@ -34,18 +34,41 @@ header {
       height: 95vh;
       width: 70%;
       margin: 0 auto; }
-      header .container .hero div {
-        margin: auto;
+      header .container .hero .overlay {
+        margin: 30% auto;
         text-align: center;
         font-family: 'HankenBook', sans-serif;
-        color: #FFF; }
-        header .container .hero div h1 {
+        color: white;
+        background: rgba(34, 34, 34, 0.473);
+        border-radius: 25px; }
+        header .container .hero .overlay h1 {
           margin: 40px auto;
-          font-size: 46px;
-          font-weight: 700; }
-        header .container .hero div p {
-          font-size: 28px;
-          margin: 50px auto; }
+          font-size: 50px;
+          font-weight: 600; }
+        header .container .hero .overlay p {
+          font-size: 36px;
+          margin: 20px; }
+        header .container .hero .overlay .buttons {
+          padding: 2em 1em;
+          display: flex;
+          justify-content: center; }
+          header .container .hero .overlay .buttons a.btn {
+            padding: 1em 1.5em;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-family: "HankenBook";
+            border-radius: 25px;
+            background: transparent;
+            color: #ffffff;
+            border: 3px solid #ffffff;
+            transition: all .2s ease-in-out; }
+            header .container .hero .overlay .buttons a.btn:first-child {
+              margin-right: 30px; }
+            header .container .hero .overlay .buttons a.btn:hover {
+              background: #1c1c1c;
+              color: #FFF;
+              box-shadow: 0px 0px 10px 0px #252525;
+              border: 0; }
 
 main {
   width: 100%; }

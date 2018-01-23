@@ -40,19 +40,46 @@ header{
             height: 95vh;
             width: 70%;
             margin: 0 auto;
-            div{
-                margin: auto;
+            .overlay{
+                margin: 30% auto;
                 text-align: center;
                 font-family: 'HankenBook', sans-serif;
-                color: #FFF;
+                color: rgb(255, 255, 255);
+                background: rgba(34, 34, 34, 0.473);
+                border-radius: 25px;
                 h1{
                     margin: 40px auto;
-                    font-size: 46px;
-                    font-weight: 700;
+                    font-size: 50px;
+                    font-weight: 600;
                 }
                 p{
-                    font-size: 28px;
-                    margin: 50px auto;
+                    font-size: 36px;
+                    margin: 20px;
+                }
+                .buttons{
+                    padding: 2em 1em;
+                    display: flex;
+                    justify-content: center;
+                    a.btn {
+                        padding: 1em 1.5em;
+                        text-decoration: none;
+                        font-size: 1.2em;
+                        font-family: "HankenBook";
+                        border-radius: 25px;
+                        background: transparent;
+                        color: #ffffff;
+                        border: 3px solid #ffffff;
+                        transition: all .2s ease-in-out;
+                        &:first-child{
+                            margin-right: 30px;
+                        }
+                        &:hover {
+                            background: #1c1c1c;
+                            color: #FFF;
+                            box-shadow: 0px 0px 10px 0px #252525;
+                            border: 0;
+                        }
+                    }
                 }
             }
         }
