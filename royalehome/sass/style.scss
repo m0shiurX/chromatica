@@ -69,8 +69,9 @@ main{
     justify-content: space-between;
     align-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     .info{
-        width: 30%;
+        max-width: 30%;
         height: 80vh;
         display: flex;
         flex-direction: column;
@@ -115,7 +116,7 @@ main{
         }
     }
     .apartments{
-        width: 60%;
+        max-width: 60%;
         height: 80vh;
         margin: 20px auto;
         display: flex;
@@ -146,8 +147,10 @@ main{
                 .content {
                     padding: 1em;
                     .buttons {
-                        margin: 20px 0;
+                        margin: 1em 0;
                         align-self: flex-start;
+                        display: flex;
+                        flex-wrap: wrap;
                         a.btn {
                             padding: .5em 1em;
                             text-decoration: none;
