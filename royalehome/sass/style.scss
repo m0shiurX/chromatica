@@ -250,7 +250,7 @@ main{
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        div {
+        .single{
             display: flex;
             flex-direction: column;
             padding: 1em;
@@ -525,3 +525,6 @@ footer{
         }
     }
 }
+
+@import 'slick.scss';
+@import 'theme.scss';

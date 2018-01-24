@@ -55,7 +55,7 @@
                     <li>Enjoy everything from entertainment, shopping to dinning all under one roof</li>
                 </ul>
                 <div class="buttons">
-                    <a href="/appartments" class="btn">ALL APARTMENTS</a>
+                    <a href="/appartments" class="btn">APARTMENTS</a>
                 </div>
             </div>
             <div class="apartments">
@@ -75,7 +75,31 @@
                     <div class="single">
                         <img src="assets/d.jpg" alt="" srcset="">
                         <div class="content">
-                            <h3> Room Services</h3>
+                            <h3> Room Services2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quasi.</p>
+                            <p class="price">$500</p>
+                            <div class="buttons">
+                                <a href="" class="btn">BOOK NOW</a>
+                                <a href="" class="btn"> Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single">
+                        <img src="assets/d.jpg" alt="" srcset="">
+                        <div class="content">
+                            <h3> Room Services3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quasi.</p>
+                            <p class="price">$500</p>
+                            <div class="buttons">
+                                <a href="" class="btn">BOOK NOW</a>
+                                <a href="" class="btn"> Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single">
+                        <img src="assets/d.jpg" alt="" srcset="">
+                        <div class="content">
+                            <h3> Room Services4</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quasi.</p>
                             <p class="price">$500</p>
                             <div class="buttons">
@@ -85,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pagination">
+                <!-- <div class="pagination">
                     <i>1</i>
                     <i>2</i>
                     <i>3</i>
@@ -94,7 +118,7 @@
                     <i>6</i>
                     <i>7</i>
                     <i>8</i>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="testimony">
@@ -102,25 +126,30 @@
                 <h3>TESTIMONIALS</h3>
             </div>
             <div class="quotes">
-                <div>
+                <div class="single">
                     <blockquote>
                          It was very accessible to the KSL Shopping Mall. Place was clean and the host was very responsive!
                     </blockquote>
                     <span>WILSON (GUEST)</span>
                 </div>
-                <div>
+                <div class="single">
                     <blockquote>
                         Royale Homestay has been more than just a managing agent and platform for us. It also carries the AirBnB Superhost title which gives owners dignity, pride and professionalism.
                     </blockquote>
                     <span>Louis Leow (KSL D'Esplanade Residence Owner)</span>
                 </div>
-            </div>
-            <div class="pagination">
-                 <i>1</i>
-                 <i>2</i>
-                 <i>3</i>
-                 <i>4</i>
-                 <i>5</i>
+                <div class="single">
+                    <blockquote>
+                         It was very accessible to the KSL Shopping Mall. Place was clean and the host was very responsive!
+                    </blockquote>
+                    <span>WILSON (GUEST)</span>
+                </div>
+                <div class="single">
+                    <blockquote>
+                        Royale Homestay has been more than just a managing agent and platform for us. It also carries the AirBnB Superhost title which gives owners dignity, pride and professionalism.
+                    </blockquote>
+                    <span>Louis Leow (KSL D'Esplanade Residence Owner)</span>
+                </div>
             </div>
         </div>
         <div class="subscription">
@@ -263,5 +292,84 @@
             </div>
         </div>
     </footer>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var $product = $(".rooms");
+        $product.on('mouseover', function () {
+                glider($product);
+            }).slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                useCSS: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        var $quotes = $(".quotes");
+        $quotes.on('mouseover', function () {
+                glider($quotes);
+            }).slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        
+        // Mouseover slide only
+        function glider($slide) {
+            $slide.on('wheel', { $slide: $slide }, function(event){
+                event.preventDefault();
+                var $slide = event.data.$slide;
+                var delta = event.originalEvent.deltaY;
+                if (delta > 0) {
+                    $slide.slick('slickPrev');
+                } else {
+                    $slide.slick('slickNext');
+                }
+            });
+        }
+    });
+</script>
 </body>
 </html>
