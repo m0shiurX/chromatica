@@ -49,10 +49,10 @@ header {
         align-items: center; }
         header .container .hero .overlay h1 {
           margin: 40px auto;
-          font-size: 50px;
+          font-size: 3em;
           font-weight: 600; }
         header .container .hero .overlay p {
-          font-size: 36px;
+          font-size: 1.8em;
           margin: 20px; }
         header .container .hero .overlay .buttons {
           padding: 2em 1em;
