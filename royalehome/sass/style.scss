@@ -1,4 +1,3 @@
-// $primary: #bfe8ff;
 $primary: #ffffff;
 $secondary: #1c1c1c;
 *{
@@ -44,12 +43,15 @@ header{
             width: 70%;
             margin: 0 auto;
             .overlay{
-                margin: 30% auto;
+                margin: 30vh auto;
                 text-align: center;
                 font-family: 'HankenBook', sans-serif;
                 color: rgb(255, 255, 255);
                 background: rgba(34, 34, 34, 0.473);
                 border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 h1{
                     margin: 40px auto;
                     font-size: 50px;
@@ -213,7 +215,7 @@ main{
 .testimony{
     width: 70%;
     margin: 0 auto;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,7 +225,7 @@ main{
         font-size: 1.4em;
         color: #3d3d3d;
         text-align: center;
-        margin: 10px auto 50px auto;
+        margin: 50px auto;
     }
 
     .quotes {
@@ -278,7 +280,7 @@ main{
 .subscription{
     width: 100%;
     background: #222222;
-    height: 18vh;
+    height: 25vh;
     margin-bottom: 80px;
     .container{
         width: 70%;
@@ -316,36 +318,7 @@ main{
 
     }
 }
-.brand{
-    width: 70%;
-    margin: 0 auto;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: .5px solid #727272;
-    .title {
-        font-weight: normal;
-        font-size: 1.4em;
-        color: #3d3d3d;
-        text-align: center;
-        margin: 10px auto 50px auto;
-    }
-
-    .brands {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        flex-wrap: wrap;
-        img {
-            width: auto;
-            max-width: 30%;
-            height: 80px;
-        }
-    }
-}
-.facilities{
+.facilities {
     width: 70%;
     margin: 0 auto;
     height: 70vh;
@@ -359,9 +332,8 @@ main{
         font-size: 1.4em;
         color: #3d3d3d;
         text-align: center;
-        margin: 10px auto 50px auto;
+        margin: 50px auto;
     }
-
     .facility {
         display: flex;
         justify-content: space-around;
@@ -369,11 +341,11 @@ main{
         align-items: flex-end;
         width: 100%;
         flex-wrap: wrap;
-        .icon{
+        .icon {
             width: 20%;
             text-align: center;
             margin-bottom: 40px;
-            p{
+            p {
                 padding-top: 10px;
                 color: tomato;
                 font-size: 1.2em;
@@ -382,6 +354,35 @@ main{
                 width: auto;
                 height: 100px;
             }
+        }
+    }
+}
+.brand{
+    width: 70%;
+    margin: 0 auto;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: .5px solid #727272;
+    .title {
+        font-weight: normal;
+        font-size: 1.4em;
+        color: #3d3d3d;
+        text-align: center;
+        margin:50px auto;
+    }
+
+    .brands {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        img {
+            width: auto;
+            max-width: 30%;
+            height: 80px;
         }
     }
 }

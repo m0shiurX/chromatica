@@ -30,7 +30,23 @@
         <div class="container">
             <div class="hero">
                 <div class="overlay">
+                    <h1>DIFFICULTIES IN <br> OUT YOUR APARTMENT ?</h1>
+                    <p>We can help you transform your apartment into a homestay-ready accommodation.</p>
+                    <div class="buttons">
+                        <a href="" class="btn">DISCOVER</a>
+                        <a href="" class="btn">SERVICES</a>
+                    </div>
+                </div>
+                <div class="overlay">
                     <h1>DIFFICULTIES IN <br> RENTING OUT YOUR APARTMENT ?</h1>
+                    <p>We can help you transform your apartment into a homestay-ready accommodation.</p>
+                    <div class="buttons">
+                        <a href="" class="btn">DISCOVER</a>
+                        <a href="" class="btn">SERVICES</a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <h1>DIFFICULTIES IN <br> YOUR APARTMENT ?</h1>
                     <p>We can help you transform your apartment into a homestay-ready accommodation.</p>
                     <div class="buttons">
                         <a href="" class="btn">DISCOVER</a>
@@ -324,6 +340,7 @@
                 dots: true,
                 infinite: true,
                 speed: 300,
+                arrows: false,                
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 responsive: [
@@ -344,6 +361,24 @@
                         }
                     }
                 ]
+            });
+        
+        // Mouseover slide only
+        var $hero = $(".hero");
+        $hero.slick({
+                dots: false,
+                infinite: true,
+                arrows: false,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 4500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                fade: true,
+                pauseOnHover: true,
+                useCSS:true,
+                useTransform: true,
+                cssEase: 'ease-in-out'
             });
         
         // Mouseover slide only
