@@ -11,16 +11,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         useCSS: true,
         responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 800,
+                breakpoint: 970,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -57,7 +48,6 @@ $(document).ready(function () {
             }
         ]
     });
-
     // Mouseover slide only
     // var $hero = $(".hero");
     // $hero.slick({
@@ -75,7 +65,6 @@ $(document).ready(function () {
     //     useTransform: true,
     //     cssEase: 'ease-in-out'
     // });
-
     // Mouseover slide only
     function glider($slide) {
         $slide.on('wheel', {
@@ -91,4 +80,12 @@ $(document).ready(function () {
             }
         });
     }
+    var urls = ["d.jpg", "ds.jpg"];
+    var base = "assets/";
+    var count = 1;
+    $('.hero_container').css('background-image', 'url("'+ base + urls[0] + '")');
+    setInterval(function () {
+        $('.hero_container').css('background-image', 'url("'+ base + urls[count] + '")');
+        count == urls.length - 1 ? count = 0 : count++;
+    }, 5000);
 });
