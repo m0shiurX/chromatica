@@ -447,7 +447,6 @@ footer{
                     align-items: center;
                     margin-bottom: 2em;
                     h3{
-                        // font-family: 'Hankenlight', sans-serif;
                         font-size: 1em;
                         line-height: 1.5em;
                     }
@@ -492,5 +491,5 @@ footer{
     }
 }
 
-@import 'slick.scss';
-@import 'theme.scss';
+@import 'import/slick.scss';
+@import 'import/theme.scss';
