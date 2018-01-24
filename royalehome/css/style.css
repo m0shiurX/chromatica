@@ -51,13 +51,13 @@ header {
           header .hero_container nav .menu.active .menuContent * {
             opacity: 1; }
           header .hero_container nav .menu.active span i:nth-child(1) {
-            transform: rotate(-45deg) translate(-50%, -50%);
+            transform: rotate(-45deg) translate(-50%, 100%);
             top: 50%; }
           header .hero_container nav .menu.active span i:nth-child(2) {
             transform: translateX(-100px);
             opacity: 0; }
           header .hero_container nav .menu.active span i:nth-child(3) {
-            transform: rotate(45deg) translate(-50%, -50%);
+            transform: rotate(45deg) translate(-50%, -100%);
             top: 50%; }
         header .hero_container nav .menu span {
           width: 70px;

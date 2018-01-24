@@ -74,7 +74,7 @@ header{
                     span{
                         i{
                             &:nth-child(1){
-                                transform: rotate(-45deg) translate(-50%, -50%);
+                                transform: rotate(-45deg) translate(-50%, 100%);
                                 top:50%;
                             }
                             &:nth-child(2){
@@ -82,7 +82,7 @@ header{
                                 opacity: 0;
                             }
                             &:nth-child(3){ 
-                                transform: rotate(45deg) translate(-50%, -50%);
+                                transform: rotate(45deg) translate(-50%, -100%);
                                 top:50%;
                             }
                         }
