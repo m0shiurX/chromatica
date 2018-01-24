@@ -80,12 +80,12 @@ $(document).ready(function () {
             }
         });
     }
-    var urls = ["d.jpg", "ds.jpg"];
+    var urls = ["bg.jpg","d.jpg", "ds.jpg"];
     var base = "assets/";
     var count = 1;
     $('.hero_container').css('background-image', 'url("'+ base + urls[0] + '")');
     setInterval(function () {
         $('.hero_container').css('background-image', 'url("'+ base + urls[count] + '")');
         count == urls.length - 1 ? count = 0 : count++;
-    }, 5000);
+    }, 8000);
 });

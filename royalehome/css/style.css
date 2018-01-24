@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Hanken';
+  src: url("fonts/Hanken-Book.ttf") format("truetype"); }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +16,9 @@ header {
   display: flex;
   flex-direction: column; }
   header .hero_container {
-    background: url("bg.jpg") no-repeat center;
+    background: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 100% 100%;
     transition: background 3s linear; }
     header .hero_container nav {
@@ -55,7 +61,7 @@ header {
       header .hero_container .hero .overlay {
         margin: 50vh auto;
         text-align: center;
-        font-family: 'HankenBook', sans-serif;
+        font-family: 'Hanken', sans-serif;
         color: white;
         border-radius: 25px;
         display: flex;
@@ -67,7 +73,7 @@ header {
             padding: 15px 20px;
             text-decoration: none;
             font-size: 1.5em;
-            font-family: "HankenBook";
+            font-family: "Hanken";
             border-radius: 5px;
             background: transparent;
             color: #1c1c1c;
@@ -118,7 +124,7 @@ main {
         padding: .8em 1.3em;
         text-decoration: none;
         font-size: 1.2em;
-        font-family: "HankenBook";
+        font-family: "Hanken";
         border-radius: 25px;
         background: transparent;
         color: #1c1c1c;
@@ -167,7 +173,7 @@ main {
               padding: .5em 1em;
               text-decoration: none;
               font-size: 1em;
-              font-family: "HankenBook";
+              font-family: "Hanken";
               border-radius: 25px;
               background: transparent;
               color: #444444;

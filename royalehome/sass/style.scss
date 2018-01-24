@@ -1,5 +1,9 @@
 $primary: #ffffff;
 $secondary: #1c1c1c;
+@font-face {
+    font-family: 'Hanken';
+    src: url('fonts/Hanken-Book.ttf') format('truetype');
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +17,9 @@ header{
     display: flex;
     flex-direction: column;
     .hero_container{
-        background: url("bg.jpg") no-repeat center;
+        background: url("bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: 100% 100%;
         transition: background 3s linear;
         nav{
@@ -64,7 +70,7 @@ header{
             .overlay{
                 margin: 50vh auto;
                 text-align: center;
-                font-family: 'HankenBook', sans-serif;
+                font-family: 'Hanken', sans-serif;
                 color: rgb(255, 255, 255);
                 // background: rgba(34, 34, 34, 0.473);
                 border-radius: 25px;
@@ -86,7 +92,7 @@ header{
                         padding: 15px 20px;
                         text-decoration: none;
                         font-size: 1.5em;
-                        font-family: "HankenBook";
+                        font-family: "Hanken";
                         border-radius: 5px;
                         background: transparent;
                         color: $secondary;
@@ -148,7 +154,7 @@ main{
                 padding: .8em 1.3em;
                 text-decoration: none;
                 font-size: 1.2em;
-                font-family: "HankenBook";
+                font-family: "Hanken";
                 border-radius: 25px;
                 background: transparent;
                 color: #1c1c1c;
@@ -204,7 +210,7 @@ main{
                             padding: .5em 1em;
                             text-decoration: none;
                             font-size: 1em;
-                            font-family: "HankenBook";
+                            font-family: "Hanken";
                             border-radius: 25px;
                             background: transparent;
                             color: #444444;
