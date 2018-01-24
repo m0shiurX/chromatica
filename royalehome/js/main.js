@@ -88,4 +88,8 @@ $(document).ready(function () {
         $('.hero_container').css('background-image', 'url("'+ base + urls[count] + '")');
         count == urls.length - 1 ? count = 0 : count++;
     }, 8000);
+    
+    $('.toggle').on('click', function () {
+        $('.menu').toggleClass('active');
+    });
 });
