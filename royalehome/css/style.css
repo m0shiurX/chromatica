@@ -129,8 +129,7 @@ main {
     flex-direction: column;
     align-content: space-between;
     align-items: center;
-    justify-content: center;
-    overflow: hidden; }
+    justify-content: center; }
     .showcase .apartments .rooms {
       align-self: center;
       width: 100%;
@@ -526,7 +525,7 @@ footer {
   font-size: 0px;
   cursor: pointer;
   background: transparent;
-  color: transparent;
+  color: #000;
   top: 50%;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
@@ -552,7 +551,7 @@ footer {
     font-family: "slick";
     font-size: 20px;
     line-height: 1;
-    color: white;
+    color: black;
     opacity: 0.75;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
