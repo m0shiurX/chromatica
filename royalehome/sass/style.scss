@@ -94,7 +94,7 @@ main{
     width: 100%;
 }
 .showcase{
-    height: 100vh;
+    height: 110vh;
     width: 70%;
     display: flex;
     margin: 0 auto;
@@ -289,7 +289,8 @@ main{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        div{
+        flex-wrap: wrap;
+        .content{
             h3{
                 font-size: 1.5em;
             }

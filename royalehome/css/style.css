@@ -80,7 +80,7 @@ main {
   width: 100%; }
 
 .showcase {
-  height: 100vh;
+  height: 110vh;
   width: 70%;
   display: flex;
   margin: 0 auto;
@@ -245,10 +245,11 @@ main {
     margin: auto;
     display: flex;
     justify-content: space-around;
-    align-items: center; }
-    .subscription .container div {
+    align-items: center;
+    flex-wrap: wrap; }
+    .subscription .container .content {
       color: #7a7a7a; }
-      .subscription .container div h3 {
+      .subscription .container .content h3 {
         font-size: 1.5em; }
     .subscription .container .fgroup {
       padding: .2em;
