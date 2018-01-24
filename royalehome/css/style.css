@@ -19,7 +19,7 @@ header {
     background: url("bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     transition: background 3s linear; }
     header .hero_container nav {
       background: transparent;
@@ -379,7 +379,13 @@ footer {
         font-size: 1em;
         line-height: 2em; }
         footer .container .footer .menu ul li i, footer .container .footer .contact ul li i {
-          padding-right: 15px; }
+          width: 15px;
+          height: 15px;
+          margin-right: 15px;
+          text-align: center; }
+        footer .container .footer .menu ul li a, footer .container .footer .contact ul li a {
+          text-decoration: none;
+          color: inherit; }
       footer .container .footer .subscribe {
         width: 500px; }
         footer .container .footer .subscribe .header {
@@ -415,6 +421,81 @@ footer {
       font-size: 14px; }
       footer .container .copyright p {
         padding-top: 15px; }
+
+.allapartments {
+  width: 70%;
+  margin: 100px auto; }
+  .allapartments .apartments {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: inherit;
+    justify-content: space-around;
+    padding: 2%;
+    margin: -6px -6px; }
+    .allapartments .apartments .single {
+      margin: 10px;
+      flex: 1 25%;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 0.25rem;
+      box-shadow: 10px 10px 40px -14px rgba(0, 0, 0, 0.25);
+      overflow: hidden; }
+      .allapartments .apartments .single:hover .image img {
+        filter: contrast(100%); }
+      .allapartments .apartments .single .image {
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem; }
+        .allapartments .apartments .single .image img {
+          filter: contrast(70%);
+          overflow: hidden;
+          position: relative;
+          transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+          max-width: 100%; }
+      .allapartments .apartments .single .content {
+        padding: 1em;
+        margin-top: auto; }
+        .allapartments .apartments .single .content h3 {
+          font-family: 'Hanken', sans-serif;
+          margin: 0;
+          padding: 0 0 10px 0;
+          color: #1c1c1c;
+          font-size: 22px;
+          font-weight: bold;
+          text-transform: uppercase; }
+        .allapartments .apartments .single .content .desc {
+          margin: 0;
+          padding: 0 0 10px 0;
+          font-size: 19px;
+          color: #1c1c1c; }
+        .allapartments .apartments .single .content .price {
+          color: tomato; }
+        .allapartments .apartments .single .content .buttons {
+          display: flex;
+          align-items: center;
+          align-content: center; }
+          .allapartments .apartments .single .content .buttons .btn {
+            padding: 5px 10px;
+            text-decoration: none;
+            background: #0e293f;
+            color: #FFF;
+            margin: 0 2px;
+            border-radius: 3px; }
+      .allapartments .apartments .single:first-child, .allapartments .apartments .single:nth-child(2) {
+        flex: 2 calc(50%-12px); }
+    @media (max-width: 920px) {
+      .allapartments .apartments .single {
+        flex: 1 45%; } }
+    @media (max-width: 600px) {
+      .allapartments .apartments .single {
+        flex: 1 80%; } }
+  @media (max-width: 600px) {
+    .allapartments .apartments {
+      flex-direction: column; } }
+
+@media (max-width: 920px) {
+  .allapartments {
+    width: 95%; } }
 
 /* Slider */
 .slick-slider {
