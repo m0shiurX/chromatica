@@ -264,7 +264,7 @@ main{
     min-height: 100vh;
 }
 .showcase{
-    height: 80vh;
+    min-height: 80vh;
     width: 70%;
     display: flex;
     margin: 0 auto;
@@ -273,7 +273,7 @@ main{
     align-items: flex-start;
     flex-wrap: wrap;
     .info{
-        max-width: 30%;
+        width: 30%;
         height: 80vh;
         display: flex;
         flex-direction: column;
@@ -318,7 +318,7 @@ main{
         }
     }
     .apartments{
-        max-width: 60%;
+        width: 60%;
         height: 60vh;
         margin: 10vh auto;
         display: flex;
@@ -328,17 +328,16 @@ main{
         justify-content: center;
         .rooms{
             align-self: center;
-            width: 100%;
-            height: 65vh;
+            width: 80%;
+            min-height: 65vh;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: space-around;
             .single{
                 display: flex;
-                // width: 50%;
+                width: 100%;
                 background: #f7f7f7;
-                // padding: 1em;
                 margin: 0 5px;
                 flex-direction: column;
                 border: .1px solid #444444;
@@ -387,8 +386,15 @@ main{
 @media (max-width: 720px) {
     .showcase {
         width: 95%;
+        display: block;
+        // flex-direction: column;
         .info{
-
+            width: 100%;
+            padding: 1em;
+        }
+        .apartments{
+            padding: 1em;
+            width: 100%;
         }
 
     }
@@ -396,7 +402,7 @@ main{
 .testimony{
     width: 70%;
     margin: 0 auto;
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -461,8 +467,10 @@ main{
 .subscription{
     width: 100%;
     background: #222222;
-    height: 25vh;
+    min-height: 25vh;
     margin-bottom: 80px;
+    align-items: center;
+    display: flex;
     .container{
         width: 70%;
         height: 100%;
@@ -481,11 +489,13 @@ main{
             padding: .2em;
             background: #727272;
             border-radius: 5px;
+            display: flex;
             input{
                 padding: 1em 2em;
                 border: 0;
                 &:first-child{
-                    border-radius: 5px 0 0 5px; 
+                    border-radius: 5px 0 0 5px;
+                    border-right: 1px solid #727272;
                 }
                 &:last-child{
                     border-radius: 0 5px 5px 0;
@@ -496,17 +506,46 @@ main{
                     padding: .8em 2em;
                 }
             }
-        }
-
+        }        
     }
 }
+    @media (max-width: 600px) {
+        .subscription{
+            .container{
+                width: 100%;
+                .content{
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                form{
+                    width: 90%;
+                    .fgroup {
+                        flex-direction: column;
+                        width: 100%;
+                        input{
+                            padding: 1em 2em;
+                            border: 0;
+                            &:first-child{
+                                border-radius: 5px 5px 0 0;
+                                border-right: none;
+                                border-bottom: 1px solid #727272;                                
+                            }
+                            &:last-child{
+                                border-radius: 0 0 5px 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 .facilities {
-    width: 70%;
+    width: 95%;
     margin: 0 auto;
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
-    align-content: space-around;
     align-items: center;
     border-top: .5px solid #757575;
     .title {
@@ -519,22 +558,20 @@ main{
     .facility {
         display: flex;
         justify-content: space-around;
-        align-content: space-between;
-        align-items: flex-end;
-        width: 100%;
+        width: 70%;
         flex-wrap: wrap;
+        flex: 1 25%;
         .icon {
-            width: 20%;
             text-align: center;
-            margin-bottom: 40px;
-            p {
-                padding-top: 10px;
-                color: tomato;
-                font-size: 1.2em;
+            img{
+                width: 80px;
+                height: 80px;
             }
-            img {
-                width: auto;
-                height: 100px;
+            p {
+                margin-top: auto;
+                padding-top: 10px;
+                color: $secondary;
+                font-size: 1.2em;
             }
         }
     }
@@ -542,7 +579,7 @@ main{
 .brand{
     width: 70%;
     margin: 0 auto;
-    height: 45vh;
+    min-height: 45vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -569,7 +606,7 @@ main{
     }
 }
 footer{
-    height: 80vh;
+    min-height: 80vh;
     background-color: #1c1c1c;
     color: #ccc;
     .container{
@@ -603,7 +640,7 @@ footer{
             
         }
         .footer{
-            height: 50vh;
+            min-height: 50vh;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -612,6 +649,7 @@ footer{
             padding-top: 80px;
             font-weight: normal;
             flex-wrap: wrap;
+            padding-bottom: 1em;
             .menu, .contact{
                 ul{
                     list-style: none;
@@ -675,7 +713,7 @@ footer{
             
         }
         .copyright{
-            height: 5vh;
+            min-height: 5vh;
             text-align: center;
             font-size: 14px;
             p{
