@@ -206,6 +206,8 @@ header{
                 align-items: center;
                 #logo {
                     animation : rrotation 1s  ease-out;
+                    width: 200px;
+                    height: auto;
                     &:hover{
                         animation : lrotation 3s infinite ease-in;
                     }
@@ -715,14 +717,13 @@ footer{
                 h3{
                     font-family: 'Hanken', sans-serif;
                     margin: 0; padding: 0 0 10px 0;
-                    color: $secondary;
-                    font-size: 22px;
-                    font-weight: bold;
-                    text-transform: uppercase;
+                    color: rgb(68, 68, 68);
+                    font-size: 1.2em;
+                    text-transform: capitalize;
                 }
                 .desc{
                     margin: 0; padding: 0 0 10px 0;  
-                    font-size: 19px;
+                    font-size: 1em;
                     color: $secondary;
                 }
                 .price{
@@ -735,7 +736,7 @@ footer{
                     .btn{
                         padding: 5px 10px;
                         text-decoration: none;
-                        background: #0e293f;
+                        background: #414141;
                         color: #FFF;
                         margin: 0 2px;
                         border-radius: 3px;
