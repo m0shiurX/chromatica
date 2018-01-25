@@ -6,6 +6,7 @@ $invert_header: #1c1c1c;
     font-family: 'Hanken';
     src: url('fonts/Hanken-Book.ttf') format('truetype');
 }
+@import url('https://fonts.googleapis.com/css?family=Lato');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -24,6 +25,7 @@ header{
         background-position: center;
         background-size: cover;
         transition: background 3s linear;
+        background-color: #1c1c1c;
         nav{
             background: transparent;
             display: flex;
@@ -198,7 +200,7 @@ header{
             .overlay{
                 margin: 40vh auto;
                 text-align: center;
-                font-family: 'Hanken', sans-serif;
+                font-family: 'Lato', sans-serif;
                 color: $header_color;
                 border-radius: 25px;
                 display: flex;
@@ -235,7 +237,7 @@ header{
                         padding: 15px 20px;
                         text-decoration: none;
                         font-size: 1.5em;
-                        font-family: "Hanken";
+                        font-family: "Lato";
                         border-radius: 5px;
                         background: transparent;
                         text-transform: uppercase;
@@ -299,7 +301,7 @@ main{
                 padding: .8em 1.3em;
                 text-decoration: none;
                 font-size: 1.2em;
-                font-family: "Hanken";
+                font-family: "Lato";
                 border-radius: 25px;
                 background: transparent;
                 color: #1c1c1c;
@@ -355,7 +357,7 @@ main{
                             padding: .5em 1em;
                             text-decoration: none;
                             font-size: 1em;
-                            font-family: "Hanken";
+                            font-family: "Lato";
                             border-radius: 25px;
                             background: transparent;
                             color: #444444;
@@ -580,6 +582,9 @@ footer{
             justify-content: space-around;
             border-bottom: 1px solid #bfe8ff;
             flex-wrap: wrap;
+            .title{
+                font-family: "Lato", sans-serif;
+            }
             ul{
                 list-style: none;
                 display: flex;
@@ -639,6 +644,10 @@ footer{
                         display: inline;
                         justify-content: space-around;
                         margin-right: 20px;
+                        a{
+                            text-decoration: none;
+                            color: inherit;
+                        }
                     }
                 }
                 form{
@@ -715,7 +724,7 @@ footer{
                 padding: 1em;                
                 margin-top: auto;
                 h3{
-                    font-family: 'Hanken', sans-serif;
+                    font-family: 'Lato', sans-serif;
                     margin: 0; padding: 0 0 10px 0;
                     color: rgb(68, 68, 68);
                     font-size: 1.2em;

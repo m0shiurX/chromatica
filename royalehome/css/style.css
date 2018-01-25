@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato");
 @font-face {
   font-family: 'Hanken';
   src: url("fonts/Hanken-Book.ttf") format("truetype"); }
@@ -20,7 +21,8 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: background 3s linear; }
+    transition: background 3s linear;
+    background-color: #1c1c1c; }
     header .hero_container nav {
       background: transparent;
       display: flex;
@@ -158,7 +160,7 @@ header {
       header .hero_container .hero .overlay {
         margin: 40vh auto;
         text-align: center;
-        font-family: 'Hanken', sans-serif;
+        font-family: 'Lato', sans-serif;
         color: #FFF;
         border-radius: 25px;
         display: flex;
@@ -190,7 +192,7 @@ header {
             padding: 15px 20px;
             text-decoration: none;
             font-size: 1.5em;
-            font-family: "Hanken";
+            font-family: "Lato";
             border-radius: 5px;
             background: transparent;
             text-transform: uppercase;
@@ -243,7 +245,7 @@ main {
         padding: .8em 1.3em;
         text-decoration: none;
         font-size: 1.2em;
-        font-family: "Hanken";
+        font-family: "Lato";
         border-radius: 25px;
         background: transparent;
         color: #1c1c1c;
@@ -292,7 +294,7 @@ main {
               padding: .5em 1em;
               text-decoration: none;
               font-size: 1em;
-              font-family: "Hanken";
+              font-family: "Lato";
               border-radius: 25px;
               background: transparent;
               color: #444444;
@@ -477,6 +479,8 @@ footer {
       justify-content: space-around;
       border-bottom: 1px solid #bfe8ff;
       flex-wrap: wrap; }
+      footer .container .services .title {
+        font-family: "Lato", sans-serif; }
       footer .container .services ul {
         list-style: none;
         display: flex;
@@ -523,6 +527,9 @@ footer {
             display: inline;
             justify-content: space-around;
             margin-right: 20px; }
+            footer .container .footer .subscribe .header ul li a {
+              text-decoration: none;
+              color: inherit; }
         footer .container .footer .subscribe form {
           display: flex;
           justify-content: space-around; }
@@ -579,7 +586,7 @@ footer {
         padding: 1em;
         margin-top: auto; }
         .allapartments .apartments .single .content h3 {
-          font-family: 'Hanken', sans-serif;
+          font-family: 'Lato', sans-serif;
           margin: 0;
           padding: 0 0 10px 0;
           color: #444444;
