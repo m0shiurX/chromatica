@@ -16,7 +16,7 @@ header {
   display: flex;
   flex-direction: column; }
   header .hero_container {
-    background: url("g.jpg");
+    background: url("i.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -191,6 +191,7 @@ header {
             font-family: "Hanken";
             border-radius: 5px;
             background: transparent;
+            text-transform: uppercase;
             color: #FFF;
             border: 3px solid #FFF;
             transition: all .2s ease-in-out; }
@@ -207,13 +208,13 @@ main {
   min-height: 100vh; }
 
 .showcase {
-  height: 110vh;
+  height: 80vh;
   width: 70%;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
   align-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap; }
   .showcase .info {
     max-width: 30%;
@@ -253,8 +254,8 @@ main {
           box-shadow: 0px 0px 10px 0px #252525; }
   .showcase .apartments {
     max-width: 60%;
-    height: 80vh;
-    margin: 20px auto;
+    height: 60vh;
+    margin: 10vh auto;
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -305,6 +306,10 @@ main {
           border-radius: 10px 10px 0 0;
           width: 100%;
           height: 60%; }
+
+@media (max-width: 720px) {
+  .showcase {
+    width: 95%; } }
 
 .testimony {
   width: 70%;
