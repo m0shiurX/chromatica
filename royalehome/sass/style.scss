@@ -256,6 +256,21 @@ header{
                         }
                     }
                 }
+                @media (max-width: 720px) {
+                    .buttons{
+                        padding: 5em 0;
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        align-content: center;
+                        a.btn {
+                            &:first-child{
+                                margin-bottom: 30px;
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
