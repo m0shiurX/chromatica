@@ -2,6 +2,7 @@ $primary: #ffffff;
 $secondary: #1c1c1c;
 $header_color: #FFF;
 $invert_header: #1c1c1c;
+$lightblue : #3d6074;
 @font-face {
     font-family: 'Hanken';
     src: url('fonts/Hanken-Book.ttf') format('truetype');
@@ -92,6 +93,9 @@ header{
                     padding: 2px 3px;
                     color: inherit;
                     text-decoration: none;
+                    &:hover{
+                        color: $lightblue;
+                    }
                 }
             }
         }
@@ -197,6 +201,18 @@ header{
 main{
     width: 100%;
     min-height: 100vh;
+    .container{
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 1em;
+        background: #c7c7c7 url("../assets/window.png")  no-repeat fixed center;
+        background-size: cover;
+    }
+    @media (max-width: 920px) {
+        .container{
+            width: 95%;
+        }
+    }
 }
 .showcase{
     min-height: 80vh;
@@ -247,7 +263,6 @@ main{
                     color: #FFF;
                     border: 3px solid #FFF;
                     box-shadow: 0px 0px 10px 0px #252525;
-
                 }
             }
         }
@@ -302,7 +317,6 @@ main{
                             &:hover {
                                 background: #444444;
                                 color: #FFF;
-                                // border: 3px solid #FFF;
                                 box-shadow: 0px 0px 10px 0px #252525;
                             }
                         }
@@ -576,7 +590,7 @@ footer{
             display: flex;
             align-items: center;
             justify-content: space-around;
-            border-bottom: 1px solid #bfe8ff;
+            border-bottom: 1px solid #929292;
             flex-wrap: wrap;
             .title{
                 font-family: "Lato", sans-serif;
@@ -595,6 +609,9 @@ footer{
                     }
                     i{
                         font-size: 48px;
+                    }
+                    &:hover{
+                        color: $lightblue;
                     }
                 }
             }
@@ -653,6 +670,9 @@ footer{
                         a{
                             text-decoration: none;
                             color: inherit;
+                            &:hover{
+                                color: $lightblue;
+                            }
                         }
                     }
                 }
@@ -813,12 +833,23 @@ footer{
                     align-items: center;
                     align-content: center;
                     .btn{
-                        padding: 5px 10px;
+                        padding: .5em 1em;
                         text-decoration: none;
-                        background: #414141;
-                        color: #FFF;
-                        margin: 0 2px;
-                        border-radius: 3px;
+                        font-size: 1em;
+                        font-family: "Lato";
+                        border-radius: 25px;
+                        background: transparent;
+                        color: #444444;
+                        border: 3px solid #444444;
+                        transition: all .2s ease-in-out;
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+                        &:hover {
+                            background: #444444;
+                            color: #FFF;
+                            box-shadow: 0px 0px 10px 0px #252525;
+                        }
                     }
                 }
             }
@@ -840,6 +871,31 @@ footer{
     @media (max-width: 600px) {
         .apartments {
             flex-direction: column;
+        }
+    }
+}
+.about{
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin: 10vh auto;
+    h2{
+        font-size: 22px;
+        margin-bottom: 100px;
+    }
+    p{
+        margin: 20px auto;
+        width: 700px;
+        color: #747474;
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 920px) {
+    .about {
+        width: 95%;
+        p{
+            width: 90%;
+            margin: 0 auto;
         }
     }
 }

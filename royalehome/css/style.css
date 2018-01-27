@@ -78,6 +78,8 @@ header {
           padding: 2px 3px;
           color: inherit;
           text-decoration: none; }
+          header nav .social ul li a:hover {
+            color: #3d6074; }
     @media (max-width: 500px) {
       header nav .menu {
         height: 70px;
@@ -157,6 +159,15 @@ header {
 main {
   width: 100%;
   min-height: 100vh; }
+  main .container {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1em;
+    background: #c7c7c7 url("../assets/window.png") no-repeat fixed center;
+    background-size: cover; }
+  @media (max-width: 920px) {
+    main .container {
+      width: 95%; } }
 
 .showcase {
   min-height: 80vh;
@@ -475,7 +486,7 @@ footer {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      border-bottom: 1px solid #bfe8ff;
+      border-bottom: 1px solid #929292;
       flex-wrap: wrap; }
       footer .container .services .title {
         font-family: "Lato", sans-serif; }
@@ -491,6 +502,8 @@ footer {
             margin-right: 0; }
           footer .container .services ul li i {
             font-size: 48px; }
+          footer .container .services ul li:hover {
+            color: #3d6074; }
     footer .container .footer {
       min-height: 50vh;
       display: flex;
@@ -536,6 +549,8 @@ footer {
             footer .container .footer .subscribe .header ul li a {
               text-decoration: none;
               color: inherit; }
+              footer .container .footer .subscribe .header ul li a:hover {
+                color: #3d6074; }
         footer .container .footer .subscribe form {
           display: flex;
           justify-content: space-around; }
@@ -657,12 +672,21 @@ footer {
           align-items: center;
           align-content: center; }
           .allapartments .apartments .single .content .buttons .btn {
-            padding: 5px 10px;
+            padding: .5em 1em;
             text-decoration: none;
-            background: #414141;
-            color: #FFF;
-            margin: 0 2px;
-            border-radius: 3px; }
+            font-size: 1em;
+            font-family: "Lato";
+            border-radius: 25px;
+            background: transparent;
+            color: #444444;
+            border: 3px solid #444444;
+            transition: all .2s ease-in-out; }
+            .allapartments .apartments .single .content .buttons .btn:first-child {
+              margin-right: 10px; }
+            .allapartments .apartments .single .content .buttons .btn:hover {
+              background: #444444;
+              color: #FFF;
+              box-shadow: 0px 0px 10px 0px #252525; }
       .allapartments .apartments .single:first-child, .allapartments .apartments .single:nth-child(2) {
         flex: 2 calc(50%-12px); }
     @media (max-width: 920px) {
@@ -674,6 +698,27 @@ footer {
   @media (max-width: 600px) {
     .allapartments .apartments {
       flex-direction: column; } }
+
+.about {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin: 10vh auto; }
+  .about h2 {
+    font-size: 22px;
+    margin-bottom: 100px; }
+  .about p {
+    margin: 20px auto;
+    width: 700px;
+    color: #747474;
+    font-size: 16px;
+    padding-bottom: 10px; }
+
+@media (max-width: 920px) {
+  .about {
+    width: 95%; }
+    .about p {
+      width: 90%;
+      margin: 0 auto; } }
 
 @media (max-width: 920px) {
   .allapartments {
