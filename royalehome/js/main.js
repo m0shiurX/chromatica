@@ -49,23 +49,6 @@ $(document).ready(function () {
         ]
     });
     // Mouseover slide only
-    // var $hero = $(".hero");
-    // $hero.slick({
-    //     dots: false,
-    //     infinite: true,
-    //     arrows: false,
-    //     speed: 1000,
-    //     autoplay: true,
-    //     autoplaySpeed: 4500,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     fade: true,
-    //     pauseOnHover: true,
-    //     useCSS: true,
-    //     useTransform: true,
-    //     cssEase: 'ease-in-out'
-    // });
-    // Mouseover slide only
     function glider($slide) {
         $slide.on('wheel', {
             $slide: $slide
