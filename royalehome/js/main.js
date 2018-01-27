@@ -48,7 +48,6 @@ $(document).ready(function () {
             }
         ]
     });
-    // Mouseover slide only
     function glider($slide) {
         $slide.on('wheel', {
             $slide: $slide
