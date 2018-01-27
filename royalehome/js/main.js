@@ -80,7 +80,7 @@ $(document).ready(function () {
             }
         });
     }
-    var urls = ["a.jpg", "i.jpg","j.jpg"];
+    var urls = ["a.jpg", "i.jpg"];
     var base = "assets/";
     var count = 1;
     $('.hero_container').css('background-image', 'url("'+ base + urls[0] + '")');

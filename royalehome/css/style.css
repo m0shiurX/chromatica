@@ -22,7 +22,8 @@ header {
     background-position: center;
     background-size: cover;
     transition: background 3s linear;
-    background-color: #1c1c1c; }
+    background-color: #1c1c1c;
+    background-attachment: fixed; }
     header .hero_container nav {
       background: transparent;
       display: flex;
