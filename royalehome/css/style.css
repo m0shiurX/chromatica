@@ -155,6 +155,58 @@ header {
           header .hero .overlay .buttons a.btn:first-child {
             margin-bottom: 30px;
             margin-right: 0; } }
+    header .hero .text_effect {
+      margin-top: 40vh; }
+      header .hero .text_effect .Iam {
+        padding: 1em 5em;
+        font: normal 40px/50px Lato, sans-serif;
+        color: #fbd535; }
+        header .hero .text_effect .Iam p {
+          height: 50px;
+          float: left;
+          margin-right: 0.3em; }
+        header .hero .text_effect .Iam b {
+          float: left;
+          overflow: hidden;
+          position: relative;
+          height: 50px;
+          top: 0px; }
+          header .hero .text_effect .Iam b .innerIam {
+            display: inline-block;
+            color: #ffffff;
+            position: relative;
+            white-space: nowrap;
+            top: 0;
+            left: 0;
+            animation: move 8s;
+            animation-iteration-count: infinite;
+            animation-delay: 15s;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out; }
+
+@keyframes move {
+  0% {
+    top: 0px; }
+  20% {
+    top: -50px; }
+  40% {
+    top: -100px; }
+  60% {
+    top: -150px; }
+  80% {
+    top: -200px; } }
+  @media (max-width: 640px) {
+    header .hero {
+      margin: auto;
+      width: 95%;
+      height: 60vh; }
+      header .hero .text_effect {
+        margin-top: 25vh; }
+        header .hero .text_effect .Iam {
+          padding: 0;
+          font-size: 1.5em;
+          overflow: hidden; } }
 
 main {
   width: 100%;
@@ -164,6 +216,12 @@ main {
     margin: 0 auto;
     padding: 1em;
     background: #f9f9f8 url("../assets/window.png") no-repeat fixed center;
+    background-size: cover; }
+  main .work_container {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1em;
+    background: #f9f9f8;
     background-size: cover; }
   @media (max-width: 920px) {
     main .container {
@@ -722,6 +780,86 @@ footer {
     .about p {
       width: 90%;
       margin: 0 auto; } }
+
+.work {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin: 10vh auto; }
+  .work h2 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin: 100px; }
+  .work .features {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .work .features .card {
+      margin: 10px;
+      flex: 1 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      width: 350px;
+      padding: 30px;
+      background: #1abc9c;
+      position: relative;
+      transition: .3s ease;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+      .work .features .card:hover {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+        transform: translateY(-10px) scale(1.02); }
+        .work .features .card:hover .entry-title {
+          background-position: -100% 0; }
+        .work .features .card:hover span {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          background: #1abc9c;
+          margin: auto;
+          transition: .5s ease-in-out;
+          font-family: Lato, sans-serif;
+          text-transform: uppercase;
+          padding: 1em; }
+      .work .features .card .entry-title {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #16a085 50%);
+        background-size: 200%;
+        background-position: 0 0;
+        display: inline;
+        transition: .5s ease-in-out;
+        font-family: Lato, sans-serif;
+        text-transform: uppercase;
+        color: white; }
+        .work .features .card .entry-title a {
+          color: white;
+          text-decoration: none; }
+      .work .features .card span {
+        display: none;
+        margin-top: 0px;
+        font-family: Lato, sans-serif;
+        font-weight: 700;
+        color: #ebe71b;
+        font-size: 1.4em;
+        transition: .3s ease; }
+        .work .features .card span a {
+          color: white; }
+
+@media (max-width: 920px) {
+  .work {
+    width: 95%; }
+    .work p {
+      width: 90%;
+      margin: 0 auto; }
+    .work .features {
+      margin: 0 auto;
+      width: 95%; } }
 
 @media (max-width: 920px) {
   .allapartments {
