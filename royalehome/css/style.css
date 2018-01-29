@@ -810,6 +810,20 @@ footer {
     font-size: 16px;
     padding-bottom: 10px; }
 
+.privacy {
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  margin: 10vh auto;
+  width: 700px; }
+  .privacy h2 {
+    font-size: 22px;
+    margin-bottom: 50px; }
+  .privacy p {
+    margin: 20px auto;
+    color: #747474;
+    font-size: 16px;
+    padding-bottom: 10px; }
+
 .faq #wrapper {
   min-height: 0;
   display: inline-block;
