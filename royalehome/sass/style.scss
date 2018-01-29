@@ -40,6 +40,12 @@ header{
         background: #1c1c1c url("../assets/work.jpg")  no-repeat fixed center;
         background-size: cover;
     }
+    #contact{
+        background: #1c1c1c url("../assets/work.jpg")  no-repeat fixed center;
+        background-size: cover;
+        height: 60vh;
+
+    }
     nav{
         background: transparent;
         display: flex;
@@ -220,7 +226,7 @@ header{
                     left: 0;
                     animation: move 8s;
                     animation-iteration-count: infinite;
-                    animation-delay: 10s;
+                    animation-delay: 3s;
                     animation-direction: alternate;
                     animation-fill-mode: forwards;
                     animation-timing-function: ease-in-out;
@@ -232,6 +238,53 @@ header{
                       80% { top: -200px; }
                     }                
                   }
+                }
+            }
+        }
+        .logo_effect{
+            margin-top: 10vh;
+            svg {
+                display: block;
+                font: 10.5em 'L';
+                margin: 0 auto;
+            }
+            .effect{
+                .text-copy {
+                    fill: none;
+                    stroke: white;
+                    stroke-dasharray: 6% 29%;
+                    stroke-width: 5px;
+                    stroke-dashoffset: 0%;
+                    animation: stroke-offset 5.5s infinite linear;
+                }
+                
+                .text-copy:nth-child(1){
+                    stroke: rgb(22, 175, 149);
+                    animation-delay: -1;
+                }
+                
+                .text-copy:nth-child(2){
+                    stroke: #1c3b35;
+                    animation-delay: -2s;
+                }
+                
+                .text-copy:nth-child(3){
+                    stroke: #BD0034;
+                    animation-delay: -3s;
+                }
+                
+                .text-copy:nth-child(4){
+                    stroke: #BD0034;
+                    animation-delay: -4s;
+                }
+                
+                .text-copy:nth-child(5){
+                    stroke: #FDB731;
+                    animation-delay: -5s;
+                }
+                
+                @keyframes stroke-offset{
+                    100% {stroke-dashoffset: -35%;}
                 }
             }
         }
