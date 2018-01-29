@@ -818,7 +818,7 @@ footer {
   margin: 50px 0;
   transform: translate(-50%, 0);
   background-color: #fefffa;
-  max-width: 450px;
+  max-width: 850px;
   padding: 30px; }
   @media (max-width: 550px) {
     .faq #wrapper {
