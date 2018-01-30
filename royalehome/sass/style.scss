@@ -27,6 +27,7 @@ header{
         background-position: center;
         background-size: cover;
         transition: background 3s linear;
+        height: 100vh;
     }
     #about_container{
         background: #1c1c1c url("k.jpg")  no-repeat fixed center;
@@ -343,6 +344,9 @@ main{
         align-items: flex-start;
         .logo{
             padding: 0em;
+            img{
+                width: 180px;
+            }
 
         }
         ul.features{
@@ -407,6 +411,7 @@ main{
                 user-select: none;
                 .content {
                     padding: 1em;
+                    height: 180px;
                     .buttons {
                         margin: 1em 0;
                         align-self: flex-start;
@@ -436,7 +441,7 @@ main{
                 img{
                     border-radius: 10px 10px 0 0;
                     width: 100%;
-                    height: 60%;
+                    height: 280px;
                 }
             }
         }
@@ -692,6 +697,25 @@ main{
             height: auto;
         }
     }
+    .textz{
+        font-style: normal;
+        position: absolute;
+        font-size: 2em;
+        text-align: center;
+        right: 200px;
+        top: 0;
+        width: 250px;
+        height: auto;
+        z-index: 1;
+        color: #1c6d73;
+        font-weight: bold;
+        text-transform: uppercase;
+        .wtext{
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: rgb(235, 192, 4);
+        }
+    }
 }
 footer{
     min-height: 80vh;
@@ -899,7 +923,7 @@ footer{
         display: flex;
         flex-wrap: wrap;
         background-color: inherit;
-        justify-content: space-around;
+        justify-content: flex-start;
         padding: 2%;
         margin: -6px -6px;
         .single{
@@ -909,12 +933,13 @@ footer{
             flex-direction: column;
             background-color: white;
             border-radius: 0.25rem;
-            box-shadow: 10px 10px 40px -14px rgba(0,0,0,0.25);
+            box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
             overflow: hidden;
-            max-width: 600px;
+            max-width: 400px;
             position: relative;
             &:hover {
                 .image img {
+
                     filter: contrast(100%);
                 }
             }
@@ -922,19 +947,18 @@ footer{
                 border-top-left-radius: 0.25rem;
                 border-top-right-radius: 0.25rem;
                 img{
-                    filter: contrast(70%);
+                    filter: contrast(90%);
                     overflow: hidden;
                     position: relative;
                     transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
-                    // max-width: 100%;
-                    // max-height: 400px;
                     width: 100%;
-                    height: 60%;
+                    height: 280px;
                 }
             }
             .content{
                 padding: 1em;                
                 margin-top: auto;
+                height: 180px;
                 h3{
                     font-family: 'Lato', sans-serif;
                     margin: 0; padding: 0 0 10px 0;
@@ -976,7 +1000,10 @@ footer{
                 }
             }
             &:first-child,&:nth-child(2) {
-                flex: 2 50%;
+                flex: 1 25%;
+            }
+            &:last-child{
+                flex: 1 25%;
             }
         }
         @media (max-width: 920px) {
@@ -1466,8 +1493,6 @@ footer{
         }
 
     }
-}
-@media (max-width: 920px) {
     .about {
         width: 95%;
         p{
@@ -1501,8 +1526,6 @@ footer{
             }
         }
     }
-}
-@media (max-width: 920px) {
     .work {
         width: 95%;
         p{
@@ -1530,8 +1553,6 @@ footer{
             }
         }
     }
-}
-@media (max-width: 920px) {
     .allapartments {
         width: 95%;
     }
