@@ -3,10 +3,6 @@ $secondary: #1c1c1c;
 $header_color: #FFF;
 $invert_header: #1c1c1c;
 $lightblue : #3d6074;
-@font-face {
-    font-family: 'Hanken';
-    src: url('fonts/Hanken-Book.ttf') format('truetype');
-}
 @import url('https://fonts.googleapis.com/css?family=Lato');
 *{
     box-sizing: border-box;
@@ -446,29 +442,6 @@ main{
         }
     }
 }
-@media (max-width: 920px) {
-    .showcase {
-        width: 90%;
-        display: block;
-        .info{
-            width: 100%;
-            padding: 1em;
-            height: 80vh;
-        }
-        .apartments{
-            padding: 1em;
-            margin: 2em;
-            width: 100%;
-            min-height: 60vh;
-            margin: 0 auto;
-            .rooms{
-                width: 100%;
-                height: auto;
-            }
-        }
-
-    }
-}
 .testimony{
     width: 70%;
     margin: 0 auto;
@@ -692,6 +665,34 @@ main{
         }
     }
 }
+.banner{
+    width: 70%;
+    margin: 0 auto;
+    height: 350px;
+    position: relative;
+    .shape{
+        border-bottom: 300px solid #ffc10778;
+        border-left: 0px solid transparent;
+        border-right: 600px solid transparent;
+        height: 80px;
+        width: 80%;
+    }
+    img{
+        position: absolute;
+        &.rocket{
+            top: -150px;
+            left: 150px;
+            width: 200px;
+            height: auto;
+        }
+        &.text{
+            right: 200px;
+            top: 0;
+            width: 250px;
+            height: auto;
+        }
+    }
+}
 footer{
     min-height: 80vh;
     background-color: #1c1c1c;
@@ -888,10 +889,12 @@ footer{
         }
     }
 }
-
 .allapartments{
     width: 70%;
-    margin: 100px auto;
+    margin-top: 100px;
+    margin-bottom: 20vh;
+    margin-left: auto;
+    margin-right: auto;
     .apartments{
         display: flex;
         flex-wrap: wrap;
@@ -1193,15 +1196,6 @@ footer{
         } 
     } 
 }
-@media (max-width: 920px) {
-    .about {
-        width: 95%;
-        p{
-            width: 90%;
-            margin: 0 auto;
-        }
-    }
-}
 .work{
     font-family: "Lato", sans-serif;
     text-align: center;
@@ -1451,6 +1445,64 @@ footer{
     }
 }
 @media (max-width: 920px) {
+    .showcase {
+        width: 90%;
+        display: block;
+        .info{
+            width: 100%;
+            padding: 1em;
+            height: 80vh;
+        }
+        .apartments{
+            padding: 1em;
+            margin: 2em;
+            width: 100%;
+            min-height: 60vh;
+            margin: 0 auto;
+            .rooms{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    }
+}
+@media (max-width: 920px) {
+    .about {
+        width: 95%;
+        p{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    .banner{
+        width: 95%;
+        height: 350px;
+        .shape{
+            border-bottom: 300px solid #ffc10778;
+            border-left: 0px solid transparent;
+            border-right: 600px solid transparent;
+            height: 80px;
+            width: 80%;
+        }
+        img{
+            position: absolute;
+            &.rocket{
+                top: -150px;
+                left: 10px;
+                width: 200px;
+                height: auto;
+            }
+            &.text{
+                right: 0px;
+                top: 0;
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
+}
+@media (max-width: 920px) {
     .work {
         width: 95%;
         p{
@@ -1484,7 +1536,6 @@ footer{
         width: 95%;
     }
 }
-
 @keyframes lrotation{
   0% { 
     transform: perspective(120px) rotateX(0deg) rotateY(0deg);

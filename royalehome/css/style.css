@@ -1,9 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato");
-@font-face {
-  font-family: 'Hanken';
-  src: url("fonts/Hanken-Book.ttf") format("truetype"); }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -358,24 +354,6 @@ main {
           width: 100%;
           height: 60%; }
 
-@media (max-width: 920px) {
-  .showcase {
-    width: 90%;
-    display: block; }
-    .showcase .info {
-      width: 100%;
-      padding: 1em;
-      height: 80vh; }
-    .showcase .apartments {
-      padding: 1em;
-      margin: 2em;
-      width: 100%;
-      min-height: 60vh;
-      margin: 0 auto; }
-      .showcase .apartments .rooms {
-        width: 100%;
-        height: auto; } }
-
 .testimony {
   width: 70%;
   margin: 0 auto;
@@ -563,6 +541,30 @@ main {
         max-width: 100%;
         height: auto; } }
 
+.banner {
+  width: 70%;
+  margin: 0 auto;
+  height: 350px;
+  position: relative; }
+  .banner .shape {
+    border-bottom: 300px solid #ffc10778;
+    border-left: 0px solid transparent;
+    border-right: 600px solid transparent;
+    height: 80px;
+    width: 80%; }
+  .banner img {
+    position: absolute; }
+    .banner img.rocket {
+      top: -150px;
+      left: 150px;
+      width: 200px;
+      height: auto; }
+    .banner img.text {
+      right: 200px;
+      top: 0;
+      width: 250px;
+      height: auto; }
+
 footer {
   min-height: 80vh;
   background-color: #1c1c1c;
@@ -711,7 +713,10 @@ footer {
 
 .allapartments {
   width: 70%;
-  margin: 100px auto; }
+  margin-top: 100px;
+  margin-bottom: 20vh;
+  margin-left: auto;
+  margin-right: auto; }
   .allapartments .apartments {
     display: flex;
     flex-wrap: wrap;
@@ -966,13 +971,6 @@ footer {
   100% {
     transform: translateY(0); } }
 
-@media (max-width: 920px) {
-  .about {
-    width: 95%; }
-    .about p {
-      width: 90%;
-      margin: 0 auto; } }
-
 .work {
   font-family: "Lato", sans-serif;
   text-align: center;
@@ -1145,6 +1143,52 @@ footer {
         font-size: 0.875em; }
       .work .forms #form input:hover:focus::-ms-placeholder, .work .forms #form textarea:hover::focus:-ms-placeholder {
         color: #cbc6c1; }
+
+@media (max-width: 920px) {
+  .showcase {
+    width: 90%;
+    display: block; }
+    .showcase .info {
+      width: 100%;
+      padding: 1em;
+      height: 80vh; }
+    .showcase .apartments {
+      padding: 1em;
+      margin: 2em;
+      width: 100%;
+      min-height: 60vh;
+      margin: 0 auto; }
+      .showcase .apartments .rooms {
+        width: 100%;
+        height: auto; } }
+
+@media (max-width: 920px) {
+  .about {
+    width: 95%; }
+    .about p {
+      width: 90%;
+      margin: 0 auto; }
+  .banner {
+    width: 95%;
+    height: 350px; }
+    .banner .shape {
+      border-bottom: 300px solid #ffc10778;
+      border-left: 0px solid transparent;
+      border-right: 600px solid transparent;
+      height: 80px;
+      width: 80%; }
+    .banner img {
+      position: absolute; }
+      .banner img.rocket {
+        top: -150px;
+        left: 10px;
+        width: 200px;
+        height: auto; }
+      .banner img.text {
+        right: 0px;
+        top: 0;
+        width: 200px;
+        height: auto; } }
 
 @media (max-width: 920px) {
   .work {
