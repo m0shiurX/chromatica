@@ -670,6 +670,13 @@ main{
         }
     }
 }
+.rental_banner{
+    width: 70%;
+    margin: 0 auto;
+    img{
+        max-width: 100%;
+    }
+}
 .banner{
     width: 70%;
     margin: 0 auto;
@@ -792,7 +799,7 @@ footer{
                 }
             }
             .subscribe{
-                width: 500px;
+                width: 350px;
                 .header{
                     display: flex;
                     justify-content: space-between;
@@ -835,7 +842,14 @@ footer{
                     }
                     
                 }
-
+                .widget{
+                    width: 100%;
+                    img{
+                        max-width: 350px;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
             }
             
         }
@@ -1226,99 +1240,22 @@ footer{
 .work{
     font-family: "Lato", sans-serif;
     text-align: center;
-    margin: 10vh auto;
+    margin: 5vh auto;
     h2{
         text-transform: uppercase;
         font-size: 1.4em;;
-        margin: 100px;
-    }
-    .features{
-        // display: flex;
-        width: 70%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        // padding: 2%;
-        // margin: -6px -6px;
-        .card{
-            margin: 10px;
-            flex: 1 25%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            width: 350px;
-            padding: 30px;
-            background: #1abc9c;
-            position: relative;
-            transition: .3s ease;
-            box-shadow: 0 1px 1px rgba(0,0,0,.3);
-            
-            &:hover {
-              box-shadow: 0 5px 20px rgba(0,0,0,.8);
-              transform: translateY(-10px) scale(1.02);
-                .entry-title{
-                      background-position: -100% 0;
-                  }
-                span{
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: 1;
-                    width: 100%;
-                    height: 100%;
-                    background: #1abc9c;
-                    margin: auto;
-                    transition: .5s ease-in-out;
-                    font-family: Lato, sans-serif;
-                    text-transform: uppercase;
-                    padding: 1em;
-
-                }
-                
-            }
-            .entry-title{
-              background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(22, 160, 133,1.0) 50%);
-              background-size: 200%;
-              background-position: 0 0;
-              display: inline;
-              transition: .5s ease-in-out;
-              font-family: Lato, sans-serif;
-              text-transform: uppercase;
-              color: white;
-              
-              a{
-                color: white;
-                text-decoration: none;
-              }
-            }
-            
-            span{
-              display: none;
-              margin-top: 0px;
-              font-family: Lato, sans-serif;
-              font-weight: 700;
-              color: #ebe71b;
-              font-size: 1.4em;
-              transition: .3s ease;              
-                a{color: white}
-            }
-          }
+        margin: 50px auto;
     }
     .forms{
         width: 70%;
         margin: auto;          
           .header {
             position: relative;
-            margin: 100px 0 25px 0;
-            font-size: 2.3em;
+            margin: 20px 0 25px 0;
+            font-size: 2em;
             text-align: center;
             letter-spacing: 7px;
           }
-          
           #form {
             position: relative;
             width: 470px;
@@ -1329,7 +1266,6 @@ footer{
               width: 470px;
               height: 50px;
               padding: 0px 15px 0px 15px;
-              
               background: transparent;
               outline: none;
               color: #2c2c2c;
@@ -1467,9 +1403,81 @@ footer{
             input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
             color: #cbc6c1;
             }
-          }
-          
+          }    
     }
+}
+.features{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card{
+        margin: 10px;
+        flex: 1 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 350px;
+        padding: 30px;
+        background: #a79d95;
+        position: relative;
+        transition: .3s ease;
+        box-shadow: 0 1px 1px rgba(0,0,0,.3);
+        
+        &:hover {
+          box-shadow: 0 5px 20px rgba(0,0,0,.8);
+          transform: translateY(-10px) scale(1.02);
+            .entry-title{
+                  background-position: -100% 0;
+              }
+            span{
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                background: #a79d95;
+                margin: auto;
+                transition: .5s ease-in-out;
+                font-family: Lato, sans-serif;
+                text-transform: uppercase;
+                padding: 1em;
+
+            }
+            
+        }
+        .entry-title{
+          background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgb(51, 51, 51) 50%);
+          background-size: 200%;
+          background-position: 0 0;
+          display: inline;
+          transition: .5s ease-in-out;
+          font-family: Lato, sans-serif;
+          text-transform: uppercase;
+          color: white;
+          
+          a{
+            color: white;
+            text-decoration: none;
+          }
+        }
+        
+        span{
+          display: none;
+          margin-top: 0px;
+          font-family: Lato, sans-serif;
+          font-weight: 700;
+          color: white;
+          font-size: 1.4em;
+          transition: .3s ease;              
+            a{color: white}
+        }
+      }
 }
 @media (max-width: 920px) {
     .showcase {

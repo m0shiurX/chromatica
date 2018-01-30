@@ -545,6 +545,12 @@ main {
         max-width: 100%;
         height: auto; } }
 
+.rental_banner {
+  width: 70%;
+  margin: 0 auto; }
+  .rental_banner img {
+    max-width: 100%; }
+
 .banner {
   width: 70%;
   margin: 0 auto;
@@ -645,7 +651,7 @@ footer {
           text-decoration: none;
           color: inherit; }
       footer .container .footer .subscribe {
-        width: 500px; }
+        width: 350px; }
         footer .container .footer .subscribe .header {
           display: flex;
           justify-content: space-between;
@@ -678,6 +684,12 @@ footer {
               font-style: oblique; }
             footer .container .footer .subscribe form input[type="button"] {
               width: 30%; }
+        footer .container .footer .subscribe .widget {
+          width: 100%; }
+          footer .container .footer .subscribe .widget img {
+            max-width: 350px;
+            width: 100%;
+            height: auto; }
     footer .container .copyright {
       min-height: 5vh;
       text-align: center;
@@ -998,79 +1010,18 @@ footer {
 .work {
   font-family: "Lato", sans-serif;
   text-align: center;
-  margin: 10vh auto; }
+  margin: 5vh auto; }
   .work h2 {
     text-transform: uppercase;
     font-size: 1.4em;
-    margin: 100px; }
-  .work .features {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .work .features .card {
-      margin: 10px;
-      flex: 1 25%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-      width: 350px;
-      padding: 30px;
-      background: #1abc9c;
-      position: relative;
-      transition: .3s ease;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
-      .work .features .card:hover {
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
-        transform: translateY(-10px) scale(1.02); }
-        .work .features .card:hover .entry-title {
-          background-position: -100% 0; }
-        .work .features .card:hover span {
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 1;
-          width: 100%;
-          height: 100%;
-          background: #1abc9c;
-          margin: auto;
-          transition: .5s ease-in-out;
-          font-family: Lato, sans-serif;
-          text-transform: uppercase;
-          padding: 1em; }
-      .work .features .card .entry-title {
-        background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #16a085 50%);
-        background-size: 200%;
-        background-position: 0 0;
-        display: inline;
-        transition: .5s ease-in-out;
-        font-family: Lato, sans-serif;
-        text-transform: uppercase;
-        color: white; }
-        .work .features .card .entry-title a {
-          color: white;
-          text-decoration: none; }
-      .work .features .card span {
-        display: none;
-        margin-top: 0px;
-        font-family: Lato, sans-serif;
-        font-weight: 700;
-        color: #ebe71b;
-        font-size: 1.4em;
-        transition: .3s ease; }
-        .work .features .card span a {
-          color: white; }
+    margin: 50px auto; }
   .work .forms {
     width: 70%;
     margin: auto; }
     .work .forms .header {
       position: relative;
-      margin: 100px 0 25px 0;
-      font-size: 2.3em;
+      margin: 20px 0 25px 0;
+      font-size: 2em;
       text-align: center;
       letter-spacing: 7px; }
     .work .forms #form {
@@ -1167,6 +1118,68 @@ footer {
         font-size: 0.875em; }
       .work .forms #form input:hover:focus::-ms-placeholder, .work .forms #form textarea:hover::focus:-ms-placeholder {
         color: #cbc6c1; }
+
+.features {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .features .card {
+    margin: 10px;
+    flex: 1 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 350px;
+    padding: 30px;
+    background: #a79d95;
+    position: relative;
+    transition: .3s ease;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+    .features .card:hover {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+      transform: translateY(-10px) scale(1.02); }
+      .features .card:hover .entry-title {
+        background-position: -100% 0; }
+      .features .card:hover span {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: #a79d95;
+        margin: auto;
+        transition: .5s ease-in-out;
+        font-family: Lato, sans-serif;
+        text-transform: uppercase;
+        padding: 1em; }
+    .features .card .entry-title {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #333333 50%);
+      background-size: 200%;
+      background-position: 0 0;
+      display: inline;
+      transition: .5s ease-in-out;
+      font-family: Lato, sans-serif;
+      text-transform: uppercase;
+      color: white; }
+      .features .card .entry-title a {
+        color: white;
+        text-decoration: none; }
+    .features .card span {
+      display: none;
+      margin-top: 0px;
+      font-family: Lato, sans-serif;
+      font-weight: 700;
+      color: white;
+      font-size: 1.4em;
+      transition: .3s ease; }
+      .features .card span a {
+        color: white; }
 
 @media (max-width: 920px) {
   .showcase {
