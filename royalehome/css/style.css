@@ -28,15 +28,17 @@ header {
     background-size: cover;
     transition: background 3s linear; }
   header #about_container {
-    background: #1c1c1c url("../assets/about.jpg") no-repeat fixed center;
-    background-size: cover; }
-  header #work_with_us {
-    background: #1c1c1c url("../assets/work.jpg") no-repeat fixed center;
-    background-size: cover; }
-  header #contact {
-    background: #1c1c1c url("../assets/work.jpg") no-repeat fixed center;
+    background: #1c1c1c url("k.jpg") no-repeat fixed center;
     background-size: cover;
-    height: 60vh; }
+    height: 50vh; }
+  header #work_with_us {
+    background: #1c1c1c url("n.jpg") no-repeat fixed bottom;
+    background-size: cover;
+    height: 100vh; }
+  header #contact {
+    background: #1c1c1c url("k.jpg") no-repeat fixed center;
+    background-size: cover;
+    height: 50vh; }
   header nav {
     background: transparent;
     display: flex;
@@ -97,7 +99,6 @@ header {
   header .hero {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 70%;
     margin: 0 auto; }
     header .hero .overlay {
@@ -201,10 +202,10 @@ header {
   80% {
     top: -200px; } }
     header .hero .logo_effect {
-      margin-top: 10vh; }
+      margin-top: 5vh; }
       header .hero .logo_effect svg {
         display: block;
-        font: 10.5em 'L';
+        font: 5em 'L';
         margin: 0 auto; }
       header .hero .logo_effect .effect .text-copy {
         fill: none;
@@ -220,10 +221,10 @@ header {
         stroke: #1c3b35;
         animation-delay: -2s; }
       header .hero .logo_effect .effect .text-copy:nth-child(3) {
-        stroke: #BD0034;
+        stroke: #5162f5;
         animation-delay: -3s; }
       header .hero .logo_effect .effect .text-copy:nth-child(4) {
-        stroke: #BD0034;
+        stroke: #429bc4;
         animation-delay: -4s; }
       header .hero .logo_effect .effect .text-copy:nth-child(5) {
         stroke: #FDB731;
@@ -246,13 +247,7 @@ header {
 
 main {
   width: 100%;
-  min-height: 100vh; }
-  main .abt_container {
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 1em;
-    background: #f9f9f8 url("../assets/window.png") no-repeat fixed center;
-    background-size: cover; }
+  min-height: 80vh; }
   main .work_container {
     min-height: 100vh;
     margin: 0 auto;
@@ -798,16 +793,16 @@ footer {
 
 .about {
   font-family: "Lato", sans-serif;
-  text-align: center;
-  margin: 10vh auto; }
+  text-align: left;
+  margin: 10vh auto;
+  width: 700px; }
   .about h2 {
-    font-size: 22px;
-    margin-bottom: 100px; }
+    font-size: 1.5em;
+    margin-bottom: 50px; }
   .about p {
     margin: 20px auto;
-    width: 700px;
-    color: #747474;
-    font-size: 16px;
+    color: #1c1c1c;
+    font-size: 1em;
     padding-bottom: 10px; }
 
 .privacy {
@@ -962,7 +957,7 @@ footer {
 @keyframes bounceInUp {
   0% {
     opacity: 0;
-    transform: translateY(2000px); }
+    transform: translateY(200px); }
   60% {
     opacity: 1;
     transform: translateY(-30px); }
@@ -1068,15 +1063,15 @@ footer {
         padding: 0px 15px 0px 15px;
         background: transparent;
         outline: none;
-        color: #726659;
-        border: solid 1px #b3aca7;
+        color: #2c2c2c;
+        border: solid 1px #2c2c2c;
         border-bottom: none;
         transition: all 0.3s ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out; }
       .work .forms #form input:hover {
-        background: #1abc9c;
+        background: #3c3c3c;
         color: #e2dedb; }
       .work .forms #form textarea {
         width: 470px;
@@ -1085,16 +1080,16 @@ footer {
         padding: 15px;
         background: transparent;
         outline: none;
-        color: #726659;
+        color: #2c2c2c;
         font-family: 'Lato', sans-serif;
         font-size: 0.875em;
-        border: solid 1px #b3aca7;
+        border: solid 1px #2c2c2c;
         transition: all 0.3s ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out; }
       .work .forms #form textarea:hover {
-        background: #3abda3;
+        background: #3c3c3c;
         color: #e2dedb; }
       .work .forms #form #submit {
         width: 470px;
@@ -1103,9 +1098,10 @@ footer {
         font-family: 'Lato', sans-serif;
         font-size: 0.875em;
         color: #b3aca7;
+        background: #1c1c1c;
         outline: none;
         cursor: pointer;
-        border: solid 1px #b3aca7;
+        border: solid 1px #2c2c2c;
         border-top: none; }
       .work .forms #form #submit:hover {
         color: #e2dedb; }
