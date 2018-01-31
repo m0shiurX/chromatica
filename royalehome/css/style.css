@@ -199,9 +199,15 @@ header {
   80% {
     top: -200px; } }
     header .hero .logo_effect {
-      margin: 5vh;
-      font-size: 2em;
-      color: teal; }
+      margin: 5vh; }
+      header .hero .logo_effect svg {
+        display: block;
+        font: 3em 'L';
+        margin: 0 auto; }
+      header .hero .logo_effect .effect .text-copy {
+        fill: #000;
+        stroke: black;
+        stroke-width: 0px; }
   @media (max-width: 640px) {
     header .hero {
       margin: auto;
