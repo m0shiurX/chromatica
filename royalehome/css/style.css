@@ -199,7 +199,9 @@ header {
   80% {
     top: -200px; } }
     header .hero .logo_effect {
-      margin-top: 5vh; }
+      margin: 5vh;
+      font-size: 2em;
+      color: teal; }
   @media (max-width: 640px) {
     header .hero {
       margin: auto;
@@ -619,7 +621,7 @@ footer {
           text-decoration: none;
           color: inherit; }
       footer .container .footer .subscribe {
-        width: 350px; }
+        width: 600px; }
         footer .container .footer .subscribe .header {
           display: flex;
           justify-content: space-between;
@@ -655,7 +657,7 @@ footer {
         footer .container .footer .subscribe .widget {
           width: 100%; }
           footer .container .footer .subscribe .widget img {
-            max-width: 350px;
+            max-width: 100%;
             width: 100%;
             height: auto; }
     footer .container .copyright {
