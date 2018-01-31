@@ -200,36 +200,6 @@ header {
     top: -200px; } }
     header .hero .logo_effect {
       margin-top: 5vh; }
-      header .hero .logo_effect svg {
-        display: block;
-        font: 5em 'L';
-        margin: 0 auto; }
-      header .hero .logo_effect .effect .text-copy {
-        fill: none;
-        stroke: white;
-        stroke-dasharray: 6% 29%;
-        stroke-width: 5px;
-        stroke-dashoffset: 0%;
-        animation: stroke-offset 5.5s infinite linear; }
-      header .hero .logo_effect .effect .text-copy:nth-child(1) {
-        stroke: #16af95;
-        animation-delay: -1; }
-      header .hero .logo_effect .effect .text-copy:nth-child(2) {
-        stroke: #1c3b35;
-        animation-delay: -2s; }
-      header .hero .logo_effect .effect .text-copy:nth-child(3) {
-        stroke: #5162f5;
-        animation-delay: -3s; }
-      header .hero .logo_effect .effect .text-copy:nth-child(4) {
-        stroke: #429bc4;
-        animation-delay: -4s; }
-      header .hero .logo_effect .effect .text-copy:nth-child(5) {
-        stroke: #FDB731;
-        animation-delay: -5s; }
-
-@keyframes stroke-offset {
-  100% {
-    stroke-dashoffset: -35%; } }
   @media (max-width: 640px) {
     header .hero {
       margin: auto;
@@ -245,6 +215,12 @@ header {
 main {
   width: 100%;
   min-height: 80vh; }
+  main .abt_container {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1em;
+    background: #f9f9f8 url("../assets/window.png") no-repeat fixed center;
+    background-size: cover; }
   main .work_container {
     min-height: 100vh;
     margin: 0 auto;
@@ -406,14 +382,6 @@ main {
         margin-left: 20px;
         text-align: left;
         position: relative; }
-        .testimony .quotes .single span:before {
-          content: "\035E";
-          font-size: 30px;
-          font-weight: bold;
-          color: #10312c;
-          position: absolute;
-          left: 0px;
-          top: 15px; }
 
 .subscription {
   width: 100%;
