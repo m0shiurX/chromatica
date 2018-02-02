@@ -3,6 +3,12 @@ $secondary: #1c1c1c;
 $header_color: #FFF;
 $invert_header: #1c1c1c;
 $lightblue : #3d6074;
+$background-purple: #EEEEEE;
+$subtle-white: #f9f9f9;
+$subtle-grey: #f2f2f2;
+$masked-grey: #333;
+$blue: #F03861;
+$open-sans: 'Open Sans', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Lato');
 *{
     box-sizing: border-box;
@@ -66,10 +72,58 @@ header{
             top: 20px;
             text-align: center;
             position: absolute;
-            ul li{
-                display: inline;
-                color: $header_color;
-                margin: 0 5px;
+            // ul {
+            //     li{
+            //         display: inline;
+            //         color: $header_color;
+            //         margin: 0 2px;
+            //         position: relative;
+            //         a{
+            //             padding: 2px 3px;
+            //             color: inherit;
+            //             text-decoration: none;
+            //             text-transform: uppercase;
+            //             &:hover{
+            //                 color: #1c1c1c;
+            //                 border-bottom: 2px solid $secondary;
+            //             }
+            //         }
+            //         &:hover >ul{
+            //             display: block;
+            //             position: relative;
+            //         }
+            //         ul{
+            //             position: absolute;
+            //             display: none;
+            //             top: 20px;
+            //             li{
+            //                 display:list-item;
+            //                 position: relative;
+            //                 list-style: none;
+            //                 li {
+            //                     position: relative;
+            //                     top:-60px; 
+            //                     left:170px;
+            //                     display: inherit;
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
+            ul {
+                font-size: 0;
+                list-style-type: none;
+                
+                // initial li
+                li {
+                  font-family: $open-sans;
+                  font-size: 1rem;
+                  font-weight: 400;
+                  color: $subtle-grey;
+                  
+                  display: inline-block;
+                  padding: 15px;
+                  position: relative;
                 a{
                     padding: 2px 3px;
                     color: inherit;
@@ -77,10 +131,51 @@ header{
                     text-transform: uppercase;
                     &:hover{
                         color: #1c1c1c;
-                        border-bottom: 2px solid $secondary;
                     }
                 }
-            }
+                   // secondary ul
+                    ul {
+                      display: none;
+                    }
+                  // initial li:hover
+                  &:hover {
+                    cursor: pointer;
+                    background-color: $subtle-grey;
+                    // secondary ul visibility change
+                    color: $invert_header;
+                    ul {
+                      display: block;
+                      margin-top: 15px;
+                      width: 137px;
+                      left: 0;
+                      
+                      position: absolute;
+                      
+                      // secondary li
+                      li {
+                        display: block;
+                        background-color: darken($subtle-grey, 70%);
+                        span {
+                          float: right;
+                          color: $subtle-white;
+                          background-color: $blue;
+                          padding: 2px 5px;
+                          text-align: center;
+                          font-size: .8rem;
+                          border-radius: 3px;
+                        }
+                        
+                        &:hover {
+                          background-color: darken($subtle-white, 10%);
+                          span {
+                            background-color: darken($blue, 5%);
+                          }
+                        }
+                      }
+                    }
+                  } 
+                }
+              }
         }
         .social{
             height: 70px;
@@ -328,30 +423,31 @@ main{
 }
 .showcase{
     min-height: 80vh;
-    width: 80%;
+    width: 95%;
     display: flex;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     .info{
         width: 30%;
-        height: 80vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: flex-start;
+        margin: 10vh auto 0 auto;
         .logo{
             padding: 0em;
             img{
                 width: 180px;
             }
-
         }
         ul.features{
             list-style: square;
             padding: 1em;
+            width: 100%;
+            display: block;
             li{
                 line-height: 1.6em;
                 font-family: "Source Sans Pro", sans-serif;
@@ -448,7 +544,7 @@ main{
     }
 }
 .testimony{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     min-height: 60vh;
     display: flex;
@@ -463,7 +559,7 @@ main{
         margin: 50px auto;
     }
 
-    .quotes {
+    .quotes,.aquotes {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -593,7 +689,7 @@ main{
         }
     }
 .facilities {
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     min-height: 70vh;
     display: flex;
@@ -610,7 +706,7 @@ main{
     .facility {
         display: flex;
         justify-content: space-around;
-        width: 70%;
+        width: 100%;
         flex-wrap: wrap;
         flex: 1 25%;
         .icon {
@@ -637,8 +733,38 @@ main{
         }
     }
 }
+.features_banner{
+    width: 80%;
+    margin: 10vh auto 0 auto;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    .feature{
+        // flex: 1 25%;
+        .title {
+            display: flex;
+            align-items: center;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+            h3{
+                font-size: 1.8em;
+                margin-left: 15px;
+            }
+        }
+        p{
+            padding: 1em;
+            max-width: 300px;
+            text-align: left;
+            font-size: 1.3em;
+        }
+    }
+}
 .brand{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     min-height: 50vh;
     display: flex;
@@ -1018,6 +1144,11 @@ footer{
             }
             &:last-child{
                 flex: 1 25%;
+            }
+        }
+        @media (max-width: 1280px) {
+            .single {
+                flex: 1 45%;
             }
         }
         @media (max-width: 920px) {
